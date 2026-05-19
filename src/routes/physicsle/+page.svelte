@@ -4,6 +4,9 @@
   import { phenomena } from '$lib/data/physicsle.js'
   import ResultModal from '$lib/components/ResultModal.svelte'
   import ResultBar from '$lib/components/ResultBar.svelte'
+  import AutocompleteInput from '$lib/components/AutocompleteInput.svelte'
+
+  const allPhenomena = [...new Set(phenomena.map(p => p.answer))].sort()
 
   const GAME_ID = 'physicsle'
   const COLOR = '#06b6d4'
@@ -13,7 +16,6 @@
   const MAX_CLUES = puzzle.clues.length
 
   let guesses = []
-  let input = ''
   let cluesRevealed = 1
   let gameOver = false
   let won = false
@@ -32,13 +34,11 @@
     return s.toLowerCase().replace(/[^a-z]/g, '')
   }
 
-  function submitGuess() {
-    const trimmed = input.trim()
-    if (!trimmed || gameOver) return
+  function submitGuess(name) {
+    if (!name || gameOver) return
+    guesses = [...guesses, name]
 
-    guesses = [...guesses, trimmed]
-
-    if (normalise(trimmed) === normalise(puzzle.answer)) {
+    if (normalise(name) === normalise(puzzle.answer)) {
       gameOver = true
       won = true
       showModal = true
@@ -46,7 +46,6 @@
       saveGameState(GAME_ID, { date: todayKey, guesses, cluesRevealed, won: true })
     } else if (cluesRevealed < MAX_CLUES) {
       cluesRevealed++
-      input = ''
     } else {
       gameOver = true
       won = false
@@ -54,11 +53,6 @@
       streak = updateStreak(GAME_ID, false)
       saveGameState(GAME_ID, { date: todayKey, guesses, cluesRevealed, won: false })
     }
-    input = ''
-  }
-
-  function handleKey(e) {
-    if (e.key === 'Enter') submitGuess()
   }
 
   function getEmojiGrid() {
@@ -118,18 +112,7 @@
     {/if}
 
     {#if !gameOver}
-      <div class="flex gap-2">
-        <input
-          class="input-field"
-          placeholder="Name the phenomenon…"
-          bind:value={input}
-          on:keydown={handleKey}
-          autofocus
-        />
-        <button class="btn text-white shrink-0" style="background:#06b6d4" on:click={submitGuess} disabled={!input.trim()}>
-          Guess
-        </button>
-      </div>
+      <AutocompleteInput options={allPhenomena} placeholder="Name the phenomenon..." color={COLOR} onSubmit={submitGuess} />
       <p class="text-xs text-slate-600 mt-2 text-center">Clue {cluesRevealed}/{MAX_CLUES} revealed · Wrong guess reveals next clue</p>
     {/if}
 

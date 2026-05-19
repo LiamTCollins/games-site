@@ -4,6 +4,16 @@
   import { cities } from '$lib/data/statele.js'
   import ResultModal from '$lib/components/ResultModal.svelte'
   import ResultBar from '$lib/components/ResultBar.svelte'
+  import AutocompleteInput from '$lib/components/AutocompleteInput.svelte'
+
+  const US_STATES = [
+    'Alabama','Alaska','Arizona','Arkansas','California','Colorado','Connecticut','Delaware','Florida','Georgia',
+    'Hawaii','Idaho','Illinois','Indiana','Iowa','Kansas','Kentucky','Louisiana','Maine','Maryland',
+    'Massachusetts','Michigan','Minnesota','Mississippi','Missouri','Montana','Nebraska','Nevada','New Hampshire','New Jersey',
+    'New Mexico','New York','North Carolina','North Dakota','Ohio','Oklahoma','Oregon','Pennsylvania','Rhode Island','South Carolina',
+    'South Dakota','Tennessee','Texas','Utah','Vermont','Virginia','Washington','West Virginia','Wisconsin','Wyoming',
+    'District of Columbia','Puerto Rico','Guam','U.S. Virgin Islands','American Samoa','Northern Mariana Islands'
+  ].sort()
 
   const GAME_ID = 'statele'
   const COLOR = '#ef4444'
@@ -13,7 +23,6 @@
   const MAX_CLUES = puzzle.clues.length
 
   let guesses = []
-  let input = ''
   let cluesRevealed = 0
   let gameOver = false
   let won = false
@@ -32,13 +41,11 @@
     return s.toLowerCase().replace(/[^a-z]/g, '')
   }
 
-  function submitGuess() {
-    const trimmed = input.trim()
-    if (!trimmed || gameOver) return
+  function submitGuess(name) {
+    if (!name || gameOver) return
+    guesses = [...guesses, name]
 
-    guesses = [...guesses, trimmed]
-
-    if (normalise(trimmed) === normalise(puzzle.state)) {
+    if (normalise(name) === normalise(puzzle.state)) {
       gameOver = true
       won = true
       showModal = true
@@ -46,7 +53,6 @@
       saveGameState(GAME_ID, { date: todayKey, guesses, cluesRevealed, won: true })
     } else if (cluesRevealed < MAX_CLUES) {
       cluesRevealed++
-      input = ''
     } else {
       gameOver = true
       won = false
@@ -54,11 +60,6 @@
       streak = updateStreak(GAME_ID, false)
       saveGameState(GAME_ID, { date: todayKey, guesses, cluesRevealed, won: false })
     }
-    input = ''
-  }
-
-  function handleKey(e) {
-    if (e.key === 'Enter') submitGuess()
   }
 
   function getEmojiGrid() {
@@ -130,18 +131,7 @@
     {/if}
 
     {#if !gameOver}
-      <div class="flex gap-2">
-        <input
-          class="input-field"
-          placeholder="State or territory name…"
-          bind:value={input}
-          on:keydown={handleKey}
-          autofocus
-        />
-        <button class="btn text-white shrink-0" style="background:#ef4444" on:click={submitGuess} disabled={!input.trim()}>
-          Guess
-        </button>
-      </div>
+      <AutocompleteInput options={US_STATES} placeholder="State or territory..." color={COLOR} onSubmit={submitGuess} />
       <p class="text-xs text-slate-600 mt-2 text-center">{guesses.length} guesses · Wrong guess reveals a clue</p>
     {/if}
 

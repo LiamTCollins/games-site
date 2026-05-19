@@ -14,6 +14,9 @@
     { id: 'languagle', name: 'Languagle',   emoji: '🌐', color: '#ec4899', route: '/languagle', description: 'Identify the language from a text snippet.' },
     { id: 'statele',   name: 'Statele',     emoji: '🗺️', color: '#ef4444', route: '/statele',   description: 'Name the US state or territory from a city.' },
     { id: 'elemently', name: 'Elemently',   emoji: '🔬', color: '#14b8a6', route: '/elemently', description: 'Guess the atomic number of an element.' },
+    { id: 'flagle',    name: 'Flagle',      emoji: '🚩', color: '#8b5cf6', route: '/flagle',    description: 'Identify the country from its flag.' },
+    { id: 'capitdle',  name: 'Capitdle',    emoji: '🏛️', color: '#10b981', route: '/capitdle',  description: 'Name the capital city of the country.' },
+    { id: 'distantle', name: 'Distantle',   emoji: '🧭', color: '#f59e0b', route: '/distantle', description: 'Guess the secret city by distance and direction.' },
   ]
 
   let gameStatuses = {}
@@ -46,9 +49,9 @@
       <h1 class="text-4xl font-extrabold text-white tracking-tight mb-2">
         daily<span class="text-indigo-400">-le</span>.com
       </h1>
-      <p class="text-slate-400 text-sm">Nine daily puzzles. One obsession.</p>
+      <p class="text-slate-400 text-sm">Twelve daily puzzles. One obsession.</p>
       <div class="mt-4 inline-flex items-center gap-2 px-3 py-1.5 rounded-full text-xs font-semibold bg-white/5 border border-white/10 text-slate-300">
-        Day #{dayNumber} &nbsp;·&nbsp; {playedCount}/9 played today
+        Day #{dayNumber} &nbsp;·&nbsp; {playedCount}/12 played today
       </div>
     </header>
 
