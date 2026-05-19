@@ -1,4 +1,4 @@
-// Distantle — guess the secret city. Feedback: distance + cardinal direction from your guess.
+// Distantle — two cities are shown, you guess the distance between them in km.
 export const cities = [
   { name: 'Tokyo', lat: 35.6762, lon: 139.6503 },
   { name: 'Paris', lat: 48.8566, lon: 2.3522 },
@@ -40,9 +40,43 @@ export const cities = [
   { name: 'Honolulu', lat: 21.3099, lon: -157.8581 },
   { name: 'Anchorage', lat: 61.2181, lon: -149.9003 },
   { name: 'Vladivostok', lat: 43.1198, lon: 131.8869 },
+  { name: 'Chicago', lat: 41.8781, lon: -87.6298 },
+  { name: 'Miami', lat: 25.7617, lon: -80.1918 },
+  { name: 'San Francisco', lat: 37.7749, lon: -122.4194 },
+  { name: 'Vancouver', lat: 49.2827, lon: -123.1207 },
+  { name: 'Montreal', lat: 45.5017, lon: -73.5673 },
+  { name: 'Havana', lat: 23.1136, lon: -82.3666 },
+  { name: 'Caracas', lat: 10.4806, lon: -66.9036 },
+  { name: 'Quito', lat: -0.1807, lon: -78.4678 },
+  { name: 'Dublin', lat: 53.3498, lon: -6.2603 },
+  { name: 'Amsterdam', lat: 52.3676, lon: 4.9041 },
+  { name: 'Brussels', lat: 50.8503, lon: 4.3517 },
+  { name: 'Lisbon', lat: 38.7223, lon: -9.1393 },
+  { name: 'Barcelona', lat: 41.3851, lon: 2.1734 },
+  { name: 'Munich', lat: 48.1351, lon: 11.5820 },
+  { name: 'Zurich', lat: 47.3769, lon: 8.5417 },
+  { name: 'Warsaw', lat: 52.2297, lon: 21.0122 },
+  { name: 'Prague', lat: 50.0755, lon: 14.4378 },
+  { name: 'Budapest', lat: 47.4979, lon: 19.0402 },
+  { name: 'Kyiv', lat: 50.4501, lon: 30.5234 },
+  { name: 'Tel Aviv', lat: 32.0853, lon: 34.7818 },
+  { name: 'Baghdad', lat: 33.3152, lon: 44.3661 },
+  { name: 'Riyadh', lat: 24.7136, lon: 46.6753 },
+  { name: 'Delhi', lat: 28.6139, lon: 77.2090 },
+  { name: 'Shanghai', lat: 31.2304, lon: 121.4737 },
+  { name: 'Hong Kong', lat: 22.3193, lon: 114.1694 },
+  { name: 'Manila', lat: 14.5995, lon: 120.9842 },
+  { name: 'Hanoi', lat: 21.0285, lon: 105.8542 },
+  { name: 'Casablanca', lat: 33.5731, lon: -7.5898 },
+  { name: 'Accra', lat: 5.6037, lon: -0.1870 },
+  { name: 'Addis Ababa', lat: 9.0320, lon: 38.7421 },
+  { name: 'Johannesburg', lat: -26.2041, lon: 28.0473 },
+  { name: 'Perth', lat: -31.9505, lon: 115.8605 },
+  { name: 'Melbourne', lat: -37.8136, lon: 144.9631 },
+  { name: 'Wellington', lat: -41.2865, lon: 174.7762 },
+  { name: 'Sao Paulo', lat: -23.5505, lon: -46.6333 },
+  { name: 'Brasilia', lat: -15.8267, lon: -47.9218 },
 ]
-
-export const allCityNames = cities.map(c => c.name)
 
 export function haversineKm(a, b) {
   const R = 6371
@@ -53,17 +87,12 @@ export function haversineKm(a, b) {
   return 2 * R * Math.asin(Math.sqrt(sa))
 }
 
-export function bearing(from, to) {
-  const toRad = d => d * Math.PI / 180
-  const toDeg = r => r * 180 / Math.PI
-  const φ1 = toRad(from.lat), φ2 = toRad(to.lat)
-  const Δλ = toRad(to.lon - from.lon)
-  const y = Math.sin(Δλ) * Math.cos(φ2)
-  const x = Math.cos(φ1)*Math.sin(φ2) - Math.sin(φ1)*Math.cos(φ2)*Math.cos(Δλ)
-  return (toDeg(Math.atan2(y, x)) + 360) % 360
-}
-
-export function bearingArrow(deg) {
-  const arrows = ['⬆️','↗️','➡️','↘️','⬇️','↙️','⬅️','↖️']
-  return arrows[Math.round(deg / 45) % 8]
+// Deterministic daily city pair from city list, using day index
+export function getDailyPair(dayIndex) {
+  const n = cities.length
+  const i = dayIndex % n
+  // pick a second city far enough away so it's a meaningful question
+  const offset = 7 + (dayIndex % 23)
+  const j = (i + offset) % n
+  return [cities[i], cities[j === i ? (i + 1) % n : j]]
 }

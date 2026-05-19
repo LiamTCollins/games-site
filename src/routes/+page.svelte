@@ -15,7 +15,7 @@
     { id: 'statele',   name: 'Statele',     emoji: '🗺️', color: '#ef4444', route: '/statele',   description: 'Name the US state or territory from a city.' },
     { id: 'elemently', name: 'Elemently',   emoji: '🔬', color: '#14b8a6', route: '/elemently', description: 'Guess the atomic number of an element.' },
     { id: 'capitdle',  name: 'Capitdle',    emoji: '🏛️', color: '#10b981', route: '/capitdle',  description: 'Name the capital city of the country.' },
-    { id: 'distantle', name: 'Distantle',   emoji: '🧭', color: '#f59e0b', route: '/distantle', description: 'Guess the secret city by distance and direction.' },
+    { id: 'distantle', name: 'Distantle',   emoji: '🧭', color: '#f59e0b', route: '/distantle', description: 'Guess the distance in km between two cities.' },
   ]
 
   let gameStatuses = {}
