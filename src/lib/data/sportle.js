@@ -248,5 +248,235 @@ export const sports = [
       "It uses a ball rather than a puck, and the goals are the same size as association football goals.",
       "It is the national sport of Russia and is extremely popular in Scandinavia and Central Asia."
     ]
+  },
+  {
+    answer: "Curling",
+    clues: [
+      "Players slide heavy polished granite stones down a sheet of ice toward a target.",
+      "Two teammates frantically sweep the ice in front of the moving stone to influence its path.",
+      "The target area is called the 'house' and is made up of concentric circles.",
+      "It originated in 16th-century Scotland and is sometimes called 'chess on ice'.",
+      "Canada, Sweden, and Switzerland dominate at the Winter Olympics."
+    ]
+  },
+  {
+    answer: "Pickleball",
+    clues: [
+      "It combines elements of tennis, badminton, and table tennis on a smaller court.",
+      "Players use solid paddles to hit a perforated plastic ball over a low net.",
+      "There is a non-volley zone near the net called 'the kitchen'.",
+      "It was invented in 1965 on Bainbridge Island, Washington.",
+      "It has been the fastest-growing sport in the United States for several consecutive years."
+    ]
+  },
+  {
+    answer: "Hurling",
+    clues: [
+      "Players use a wooden stick called a hurley to strike a small ball called a sliotar.",
+      "It is considered the world's fastest field sport on grass.",
+      "Players can carry the ball on the flat of the stick while running.",
+      "It is one of the national sports of Ireland and governed by the GAA.",
+      "The All-Ireland final is played each September at Croke Park in Dublin."
+    ]
+  },
+  {
+    answer: "Lacrosse",
+    clues: [
+      "Players use a long-handled stick with a net pocket to throw, catch, and carry a rubber ball.",
+      "It originated among the indigenous peoples of North America centuries before European contact.",
+      "It is the national summer sport of Canada.",
+      "Variants include field, box, and women's versions, each with different rules.",
+      "It will return to the Olympic Games in 2028 after a century-long absence."
+    ]
+  },
+  {
+    answer: "Korfball",
+    clues: [
+      "Teams of four men and four women compete together on the same side, always.",
+      "Players shoot a ball into a basket mounted on top of a 3.5 metre pole.",
+      "The basket has no backboard, so shots can come from any angle.",
+      "It was invented in the Netherlands in 1902 by a schoolteacher.",
+      "It is one of the few team sports specifically designed to be mixed-gender."
+    ]
+  },
+  {
+    answer: "Pelota",
+    clues: [
+      "A Basque ball game played by hitting a small hard ball against a wall.",
+      "It can be played with bare hands, a wooden paddle, or a curved wicker scoop.",
+      "The court is called a fronton or trinquete.",
+      "It is the ancestor of Jai Alai and was once an Olympic demonstration sport.",
+      "It is most popular in the Basque regions of Spain, France, and parts of Latin America."
+    ]
+  },
+  {
+    answer: "Gaelic Football",
+    clues: [
+      "A team sport from Ireland that mixes elements of association football and rugby.",
+      "Players can kick, catch, hand-pass, and bounce a round ball.",
+      "The goal posts are H-shaped with a net on the bottom half — goals are worth 3 points, points are worth 1.",
+      "Teams of 15 play on a large rectangular pitch.",
+      "Like hurling, it is governed by the GAA and the All-Ireland final is held at Croke Park."
+    ]
+  },
+  {
+    answer: "Squash",
+    clues: [
+      "Two players take turns hitting a small rubber ball against a four-walled court.",
+      "The ball is hollow, dotted for speed identification, and notoriously low-bouncing.",
+      "Players use stringed rackets shorter than tennis rackets.",
+      "It was developed at Harrow School in England in the 19th century.",
+      "It is repeatedly proposed for the Olympics but has not yet been included."
+    ]
+  },
+  {
+    answer: "Field Hockey",
+    clues: [
+      "Players use a J-shaped stick to push a small hard ball into a goal.",
+      "Only the flat side of the stick may be used to strike the ball.",
+      "Goals can only be scored from within a semicircle called the shooting circle.",
+      "India and Pakistan historically dominated the sport in the 20th century.",
+      "It has been an Olympic sport since 1908 and is played on artificial turf at top level."
+    ]
+  },
+  {
+    answer: "Speed Skating",
+    clues: [
+      "Athletes race on long ice ovals wearing skates with extremely long blades.",
+      "The blades have a hinge at the heel known as the 'clap' design.",
+      "Races range from 500 metres to 10,000 metres on a 400-metre oval.",
+      "The Netherlands has dominated the long-track event at recent Winter Olympics.",
+      "Short track is a separate Olympic discipline raced on a 111-metre oval."
+    ]
+  },
+  {
+    answer: "Biathlon",
+    clues: [
+      "It combines cross-country skiing with rifle shooting.",
+      "Athletes ski a course and stop periodically to shoot at small targets.",
+      "Missed shots result in penalty laps or added time.",
+      "Targets are 50 metres away and only about the size of a coin when shot standing.",
+      "Norway and Germany are perennial powers at the Winter Olympics in this sport."
+    ]
+  },
+  {
+    answer: "Australian Rules Football",
+    clues: [
+      "Played on an oval-shaped ground originally designed for cricket.",
+      "Players can kick, hand-pass, run with, or mark the oval-shaped ball.",
+      "A goal scores six points, a behind scores one point.",
+      "There are 18 players per team — the most of any major football code.",
+      "The AFL Grand Final is one of the largest annually attended club championships in the world."
+    ]
+  },
+  {
+    answer: "Polo",
+    clues: [
+      "Teams of four ride horses and use long mallets to hit a small ball into a goal.",
+      "Each match is divided into periods called chukkas.",
+      "Players change horses between chukkas due to the intensity of play.",
+      "It originated in ancient Persia and was codified by the British in India.",
+      "Argentina is considered the world's premier nation for this sport."
+    ]
+  },
+  {
+    answer: "Fencing",
+    clues: [
+      "Two competitors duel with bladed weapons on a narrow strip called a piste.",
+      "The three weapons are foil, épée, and sabre, each with distinct target areas and rules.",
+      "Hits are detected electronically through wires connected to the fencer's jacket.",
+      "Right-of-way rules determine who scores in foil and sabre when both hit simultaneously.",
+      "It has been contested at every modern Summer Olympics since 1896."
+    ]
+  },
+  {
+    answer: "Snooker",
+    clues: [
+      "Players use a cue to pot balls into pockets on a large green-cloth table.",
+      "The table is significantly larger than a pool table — 12 feet by 6 feet.",
+      "Red balls are worth 1 point; the six coloured balls range from 2 to 7 points.",
+      "A perfect maximum break is 147 points.",
+      "The World Championship is held every April at the Crucible Theatre in Sheffield."
+    ]
+  },
+  {
+    answer: "Boules",
+    clues: [
+      "Players throw metal balls as close as possible to a small target ball called a jack.",
+      "It is traditionally played on a flat gravel or dirt surface.",
+      "The metal balls are about the size of an orange and hollow.",
+      "Bocce, pétanque, and lawn bowls are all variants in the same family.",
+      "Pétanque, the French version, is iconic in southern France village squares."
+    ]
+  },
+  {
+    answer: "Bobsleigh",
+    clues: [
+      "Crews of two or four ride a streamlined sled down a winding ice track at high speed.",
+      "The start involves an explosive sprint to push the sled before athletes leap in.",
+      "Tracks include the famous Mount Van Hoevenberg and St. Moritz courses.",
+      "Speeds regularly exceed 130 km/h with G-forces around 5G in tight curves.",
+      "Jamaica's debut team at the 1988 Calgary Olympics inspired the film Cool Runnings."
+    ]
+  },
+  {
+    answer: "Handball",
+    clues: [
+      "Seven players per side throw a small ball trying to score in a soccer-style goal.",
+      "Players may take three steps and hold the ball for three seconds before passing or shooting.",
+      "Only the goalkeeper may stand inside the six-metre arc in front of the goal.",
+      "It is enormously popular in Europe — Germany, France, and Denmark dominate.",
+      "It has been an Olympic sport in its current form since 1972."
+    ]
+  },
+  {
+    answer: "Water Polo",
+    clues: [
+      "Teams of seven play in a deep pool trying to throw a ball into a floating goal.",
+      "Players cannot touch the bottom of the pool — constant treading water is required.",
+      "The eggbeater kick is the fundamental technique for staying upright.",
+      "Matches last four quarters and are notoriously physical underwater.",
+      "Hungary, Serbia, and Italy are the historical powers in the men's game."
+    ]
+  },
+  {
+    answer: "Sumo",
+    clues: [
+      "Two wrestlers try to force each other out of a circular ring or to touch the ground.",
+      "Matches typically last only a few seconds but are preceded by elaborate ritual.",
+      "Wrestlers are organised into ranks; the highest is Yokozuna.",
+      "It is the national sport of Japan and is rooted in Shinto religious tradition.",
+      "Six grand tournaments are held each year, each lasting 15 days."
+    ]
+  },
+  {
+    answer: "Petanque",
+    clues: [
+      "Players throw small steel balls toward a target ball called the cochonnet.",
+      "Unlike its larger cousin, players must keep both feet inside a small circle when throwing.",
+      "It was invented in 1907 in La Ciotat, France, when a player with rheumatism could no longer run up.",
+      "The name comes from the Provençal phrase 'pés tanqués', meaning 'feet planted'.",
+      "It is played on a gravel surface called a terrain or piste."
+    ]
+  },
+  {
+    answer: "Skeleton",
+    clues: [
+      "A single rider lies head-first on a small sled and races down an ice track.",
+      "Faces hover just centimetres above the ice at speeds over 130 km/h.",
+      "Steering is done with subtle shoulder and knee pressure on the sled.",
+      "It was first contested at the 1928 Winter Olympics in St. Moritz.",
+      "Great Britain has historically been surprisingly strong in this Olympic event."
+    ]
+  },
+  {
+    answer: "Modern Pentathlon",
+    clues: [
+      "A single athlete competes in five disparate events in one day.",
+      "The five disciplines are fencing, swimming, equestrian show jumping, pistol shooting, and running.",
+      "It was designed by Pierre de Coubertin to simulate the skills of a 19th-century cavalry officer.",
+      "The shooting and running portions are combined into a laser-run finale.",
+      "It has been on the Olympic programme since 1912 in Stockholm."
+    ]
   }
 ]

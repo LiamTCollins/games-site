@@ -262,5 +262,203 @@ export const people = [
       "During World War I, I developed mobile X-ray units known as 'Petites Curies'.",
       "I died in 1934 from aplastic anaemia, likely caused by decades of radiation exposure."
     ]
+  },
+  {
+    answer: "Albert Einstein",
+    clues: [
+      "I was born in Ulm, Germany in 1879 and famously spoke late as a child.",
+      "I worked as a patent clerk in Bern while producing four revolutionary papers in 1905.",
+      "I introduced an equation relating energy, mass, and the speed of light.",
+      "I won the Nobel Prize in 1921 not for relativity but for the photoelectric effect.",
+      "I fled Germany when the Nazis came to power and settled in Princeton, New Jersey.",
+      "I declined the offer to become the second president of Israel in 1952."
+    ]
+  },
+  {
+    answer: "Nelson Mandela",
+    clues: [
+      "I was born in 1918 in a village in the Eastern Cape of South Africa.",
+      "I trained as a lawyer and co-founded my country's first black legal practice.",
+      "I was imprisoned for 27 years, most of them on Robben Island.",
+      "I shared the 1993 Nobel Peace Prize with F. W. de Klerk.",
+      "I became my country's first democratically elected president in 1994.",
+      "My given Xhosa name was Rolihlahla, meaning 'troublemaker'."
+    ]
+  },
+  {
+    answer: "Mahatma Gandhi",
+    clues: [
+      "I was born in 1869 in Porbandar, in what is now the Indian state of Gujarat.",
+      "I studied law in London and practiced for over 20 years in South Africa.",
+      "I led a 240-mile march to the sea to protest a tax on salt.",
+      "I championed satyagraha — nonviolent resistance — against British colonial rule.",
+      "My honorific title means 'great soul' in Sanskrit; my given name was Mohandas.",
+      "I was assassinated in New Delhi in January 1948, months after Indian independence."
+    ]
+  },
+  {
+    answer: "Frida Kahlo",
+    clues: [
+      "I was born in 1907 in Coyoacán, a neighbourhood of Mexico City.",
+      "A near-fatal bus accident at age 18 left me with lifelong pain and disability.",
+      "I painted dozens of self-portraits, often featuring symbolic Mexican imagery.",
+      "I married a famous muralist twice — Diego Rivera.",
+      "I had a brief romantic affair with Leon Trotsky during his exile in Mexico.",
+      "My iconic 'Blue House' in Coyoacán is now a museum dedicated to my life."
+    ]
+  },
+  {
+    answer: "Steve Jobs",
+    clues: [
+      "I was born in San Francisco in 1955 and given up for adoption at birth.",
+      "I dropped out of Reed College after one semester but audited a calligraphy class that influenced typography decades later.",
+      "I co-founded a company in my parents' garage in Los Altos, California in 1976.",
+      "I was forced out of my own company in 1985 and returned to lead it in 1997.",
+      "Under my leadership, my company launched the iPod, iPhone, and iPad.",
+      "I died of pancreatic cancer in October 2011."
+    ]
+  },
+  {
+    answer: "Walt Disney",
+    clues: [
+      "I was born in Chicago in 1901 and grew up partly on a farm in Marceline, Missouri.",
+      "I started my career as a commercial artist before launching an animation studio.",
+      "I won 22 competitive Academy Awards — more than any other individual.",
+      "My most famous character, a mouse, was originally going to be named Mortimer.",
+      "I supervised the design and construction of a theme park that opened in Anaheim in 1955.",
+      "I died of lung cancer in 1966 while planning a second theme park in Florida."
+    ]
+  },
+  {
+    answer: "Pablo Picasso",
+    clues: [
+      "I was born in Málaga, Spain in 1881 and could draw before I could speak fluently.",
+      "I helped pioneer a movement that fragmented subjects into geometric forms.",
+      "My 1937 painting depicting the bombing of a Basque town hangs in Madrid.",
+      "I went through distinct stylistic periods named for colours: blue and rose.",
+      "I spent most of my adult life in France and lived to 91.",
+      "I produced an estimated 50,000 artworks across painting, sculpture, ceramics, and print."
+    ]
+  },
+  {
+    answer: "Cleopatra",
+    clues: [
+      "I ruled an ancient kingdom from 51 BC until my death in 30 BC.",
+      "Despite ruling Egypt, my family was actually of Macedonian Greek origin.",
+      "I had a son with Julius Caesar named Caesarion.",
+      "I later married another Roman general and fought against Octavian.",
+      "My death is traditionally said to have come from the bite of an asp.",
+      "My reign marked the end of the Ptolemaic dynasty and Egyptian independence."
+    ]
+  },
+  {
+    answer: "Alan Turing",
+    clues: [
+      "I was born in London in 1912 and studied mathematics at King's College, Cambridge.",
+      "I devised a theoretical universal computing machine in a 1936 paper.",
+      "During WWII I worked at Bletchley Park breaking German naval ciphers.",
+      "I proposed a test of machine intelligence still discussed today.",
+      "I was prosecuted in 1952 for homosexuality and chemically castrated.",
+      "I died in 1954 from cyanide poisoning, ruled a suicide; I was pardoned posthumously in 2013."
+    ]
+  },
+  {
+    answer: "Michael Jordan",
+    clues: [
+      "I was born in Brooklyn in 1963 and raised in Wilmington, North Carolina.",
+      "I was famously cut from my high school varsity basketball team as a sophomore.",
+      "I won six NBA championships, all with the same team in the 1990s.",
+      "I briefly retired to play minor league baseball after my father's murder.",
+      "My signature sneaker line has generated billions in revenue.",
+      "I won my final championship game in 1998 with what is simply called 'The Shot' or 'The Last Shot'."
+    ]
+  },
+  {
+    answer: "Charlie Chaplin",
+    clues: [
+      "I was born in London in 1889 and spent part of my childhood in a workhouse.",
+      "I became one of the first global celebrities of the silent film era.",
+      "My most famous character wore a bowler hat, oversized shoes, and a small moustache.",
+      "I co-founded United Artists with three other film figures in 1919.",
+      "I refused to speak in films long after sound was introduced.",
+      "I was effectively exiled from the US during the McCarthy era and settled in Switzerland."
+    ]
+  },
+  {
+    answer: "Beethoven",
+    clues: [
+      "I was born in Bonn around 1770 in what is now western Germany.",
+      "I moved to Vienna in my early twenties to study, partly under Haydn.",
+      "I began losing my hearing in my late twenties, eventually going completely deaf.",
+      "My ninth and final symphony famously incorporates a chorus singing Schiller's 'Ode to Joy'.",
+      "I bridged the Classical and Romantic eras of Western music.",
+      "I never married, though I wrote passionate letters to an unidentified 'Immortal Beloved'."
+    ]
+  },
+  {
+    answer: "Vincent van Gogh",
+    clues: [
+      "I was born in 1853 in the southern Netherlands, the son of a minister.",
+      "I only became a full-time artist at age 27, after failing at art dealing and preaching.",
+      "I produced over 2,100 artworks in the final decade of my life.",
+      "I famously cut off part of my own ear during a mental health crisis in Arles in 1888.",
+      "I sold only one painting during my lifetime, despite later becoming one of history's most valuable artists.",
+      "I died at 37 from a gunshot wound, generally believed to be self-inflicted."
+    ]
+  },
+  {
+    answer: "Queen Elizabeth II",
+    clues: [
+      "I was born in 1926 and never expected to inherit the throne until my uncle abdicated.",
+      "I served as a mechanic and driver in the Auxiliary Territorial Service during WWII.",
+      "I became monarch in 1952 while travelling in Kenya, on hearing of my father's death.",
+      "My reign of over 70 years was the longest in British history.",
+      "I was head of state of 15 Commonwealth realms at the time of my death.",
+      "I died at Balmoral Castle in Scotland in September 2022."
+    ]
+  },
+  {
+    answer: "Leonardo da Vinci",
+    clues: [
+      "I was born out of wedlock in 1452 in the Tuscan town that became my name.",
+      "I filled thousands of notebook pages with anatomical sketches, mechanical designs, and observations.",
+      "I painted a fresco in Milan depicting Christ's final meal with his disciples.",
+      "My most famous portrait hangs behind bulletproof glass at the Louvre.",
+      "I spent my final years in France at the invitation of King Francis I.",
+      "I worked in mirror writing, scrawling notes from right to left."
+    ]
+  },
+  {
+    answer: "Charles Darwin",
+    clues: [
+      "I was born in Shrewsbury, England in 1809, the same day as Abraham Lincoln.",
+      "I almost became a country parson before a chance opportunity changed my plans.",
+      "I spent nearly five years circumnavigating the globe on HMS Beagle.",
+      "Observations on a remote Pacific archipelago shaped my eventual theory.",
+      "I delayed publishing my major work for 20 years, fearing the religious backlash.",
+      "I am buried in Westminster Abbey near Isaac Newton."
+    ]
+  },
+  {
+    answer: "Audrey Hepburn",
+    clues: [
+      "I was born in Brussels in 1929 to a Dutch baroness and a British-Austrian father.",
+      "I spent part of WWII in the Netherlands under Nazi occupation, secretly aiding the resistance.",
+      "My breakthrough role was as a runaway princess in a 1953 romantic comedy filmed in Rome.",
+      "I starred in a 1961 film about a fashionable young woman who breakfasts at a famous Manhattan jeweller.",
+      "I spent the last years of my life as a UNICEF goodwill ambassador for children.",
+      "I died of appendiceal cancer in 1993 at my home in Switzerland."
+    ]
+  },
+  {
+    answer: "Maya Angelou",
+    clues: [
+      "I was born Marguerite Annie Johnson in St. Louis, Missouri in 1928.",
+      "I was the first Black woman to write and produce a screenplay accepted by Hollywood.",
+      "I worked as a calypso singer, journalist in Egypt and Ghana, and Civil Rights organiser.",
+      "My 1969 autobiography about my childhood became an international bestseller.",
+      "I recited a poem at President Bill Clinton's first inauguration in 1993.",
+      "I was awarded the Presidential Medal of Freedom in 2011."
+    ]
   }
 ]

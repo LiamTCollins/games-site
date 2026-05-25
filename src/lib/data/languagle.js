@@ -218,5 +218,93 @@ export const languages = [
       "It was repressed by the Franco dictatorship in Spain and was banned from official use for decades.",
       "Its speakers live primarily in Catalonia, Valencia, the Balearic Islands, and the microstate of Andorra."
     ]
+  },
+  {
+    answer: "Czech",
+    snippet: "Voda je nezbytná pro život. Bez vody by na Zemi nemohlo existovat nic živého.",
+    clues: [
+      "It is a West Slavic language closely related to Slovak.",
+      "It uses the Latin alphabet with distinctive diacritics like č, ř, and ž.",
+      "It is famous for the letter ř, considered one of the most difficult sounds in any language.",
+      "It is the official language of a Central European country whose capital is Prague.",
+      "Until 1993, it shared a country with its closest linguistic relative."
+    ]
+  },
+  {
+    answer: "Romanian",
+    snippet: "Apa este esențială pentru viață. Fără apă, nimic nu ar putea trăi pe Pământ.",
+    clues: [
+      "It is the only major Romance language spoken in Eastern Europe.",
+      "Around 70% of its vocabulary comes from Latin, but it has heavy Slavic influences.",
+      "It uses the Latin alphabet with special characters like ă, â, î, ș, and ț.",
+      "Approximately 24 million people speak it as a first language.",
+      "It is the official language of two neighbouring countries, one with the same name as the language."
+    ]
+  },
+  {
+    answer: "Hungarian",
+    snippet: "A víz elengedhetetlen az élethez. Víz nélkül semmi sem élhetne a Földön.",
+    clues: [
+      "It is not Indo-European — it belongs to the Uralic family along with Finnish and Estonian.",
+      "It is famous for having extremely long words built up through agglutination.",
+      "It uses 14 vowels (some short, some long) and has vowel harmony.",
+      "It is the official language of a landlocked Central European country.",
+      "Its capital city, where most speakers live, is bisected by the Danube River."
+    ]
+  },
+  {
+    answer: "Finnish",
+    snippet: "Vesi on välttämätöntä elämälle. Ilman vettä mikään ei voisi elää maan päällä.",
+    clues: [
+      "It is a Uralic language, completely unrelated to its Indo-European Scandinavian neighbours.",
+      "It has 15 noun cases and uses vowel harmony.",
+      "It is the official language of a Nordic country known for saunas and forests.",
+      "It is closely related to Estonian and more distantly to Hungarian.",
+      "It is famous for very long compound words and a near phonetic spelling system."
+    ]
+  },
+  {
+    answer: "Swedish",
+    snippet: "Vatten är nödvändigt för livet. Utan vatten skulle ingenting kunna leva på jorden.",
+    clues: [
+      "It is a North Germanic language with about 10 million native speakers.",
+      "It is mutually intelligible with both Danish and Norwegian.",
+      "It is the official language of a Scandinavian country and an official language of Finland.",
+      "It has a melodic pitch accent that can change word meaning.",
+      "The capital where most of its prestige variety is spoken is sometimes called the 'Venice of the North'."
+    ]
+  },
+  {
+    answer: "Indonesian",
+    snippet: "Air sangat penting untuk kehidupan. Tanpa air, tidak ada yang bisa hidup di bumi.",
+    clues: [
+      "It is a standardised register of Malay used as a lingua franca across thousands of islands.",
+      "It uses the Latin alphabet and has remarkably simple grammar — no verb conjugations or grammatical genders.",
+      "It is the official language of the world's fourth most populous country.",
+      "It has borrowed extensively from Dutch, Arabic, Portuguese, and English.",
+      "It is mutually intelligible with the official language of Malaysia."
+    ]
+  },
+  {
+    answer: "Tagalog",
+    snippet: "Mahalaga ang tubig sa buhay. Kung wala ang tubig, walang anuman ang mabubuhay sa mundo.",
+    clues: [
+      "It is an Austronesian language spoken primarily on the island of Luzon.",
+      "Its standardised form is the basis of the national language of a Southeast Asian archipelagic country.",
+      "It uses many Spanish loanwords from over 300 years of colonial rule.",
+      "Common phrases include 'Salamat' for thank you and 'Mabuhay' for welcome.",
+      "It is spoken by Filipinos worldwide as part of a major diaspora."
+    ]
+  },
+  {
+    answer: "Hebrew",
+    snippet: "המים חיוניים לחיים. בלי מים, שום דבר לא יוכל לחיות על פני כדור הארץ.",
+    clues: [
+      "It is written right to left and uses an abjad alphabet with 22 letters.",
+      "It was revived as a spoken language in the late 19th century after centuries of mainly liturgical use.",
+      "It is one of two official languages of a Middle Eastern country, the other being Arabic.",
+      "It is the language of the Hebrew Bible (Tanakh) and Mishnah.",
+      "Eliezer Ben-Yehuda is credited as the father of its modern revival."
+    ]
   }
 ]

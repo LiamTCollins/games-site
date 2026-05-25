@@ -238,5 +238,165 @@ export const phenomena = [
       "Michael Faraday discovered it independently in 1831, and his results are codified in Faraday's Law.",
       "It underpins virtually all electricity generation — from power plants to bicycle dynamos."
     ]
+  },
+  {
+    answer: "Brownian Motion",
+    clues: [
+      "Tiny particles suspended in a fluid jiggle randomly, never coming to rest.",
+      "It was first observed in pollen grains floating in water under a microscope.",
+      "The jiggling is caused by collisions with invisible molecules of the surrounding fluid.",
+      "Einstein's 1905 mathematical explanation provided the first hard evidence that atoms exist.",
+      "It is named for the Scottish botanist who studied it systematically in 1827."
+    ]
+  },
+  {
+    answer: "Diffraction",
+    clues: [
+      "Waves bend around obstacles or spread out after passing through a narrow opening.",
+      "Light passing through a slit produces an alternating pattern of bright and dark fringes.",
+      "It is most pronounced when the obstacle is comparable in size to the wavelength.",
+      "It is exploited in techniques like X-ray crystallography to reveal atomic structure.",
+      "It is the reason you can still hear someone calling from around a corner."
+    ]
+  },
+  {
+    answer: "Superconductivity",
+    clues: [
+      "Certain materials conduct electricity with zero resistance below a critical temperature.",
+      "An applied magnetic field is expelled from the interior of such a material.",
+      "It enables stable persistent currents that can flow indefinitely without a power source.",
+      "It powers the magnets in MRI machines and particle accelerators like the LHC.",
+      "It was discovered in mercury at 4 kelvin by Heike Kamerlingh Onnes in 1911."
+    ]
+  },
+  {
+    answer: "Tunneling",
+    clues: [
+      "A quantum particle can pass through an energy barrier higher than its own energy.",
+      "It has no classical analog — the particle should be stopped by the barrier entirely.",
+      "It is the mechanism behind alpha decay in radioactive nuclei.",
+      "It also enables the operation of scanning tunneling microscopes and flash memory.",
+      "Without it, the Sun could not fuse hydrogen at its core temperature."
+    ]
+  },
+  {
+    answer: "Hawking Radiation",
+    clues: [
+      "Black holes are predicted to slowly emit a faint thermal glow.",
+      "It originates from quantum effects at the event horizon, not from inside.",
+      "Smaller black holes radiate faster and hotter than supermassive ones.",
+      "It would cause black holes to eventually evaporate completely, given enough time.",
+      "It is named for the British physicist who derived it in 1974."
+    ]
+  },
+  {
+    answer: "Pair Production",
+    clues: [
+      "A high-energy photon converts into a particle and its antiparticle.",
+      "The process requires the presence of a nearby nucleus to conserve momentum.",
+      "Energy is converted directly into mass according to Einstein's famous equation.",
+      "Reverse of annihilation, in which a particle and antiparticle become photons.",
+      "It is commonly observed near electron-positron creation in cosmic ray showers."
+    ]
+  },
+  {
+    answer: "Cherenkov Radiation",
+    clues: [
+      "Charged particles travelling faster than light in a medium emit a blue glow.",
+      "It does not violate relativity — only the speed of light in vacuum is the limit.",
+      "It is responsible for the eerie blue glow of underwater nuclear reactors.",
+      "It is used to detect high-energy particles in neutrino observatories.",
+      "It was discovered in 1934 and won the Nobel Prize in 1958."
+    ]
+  },
+  {
+    answer: "Magnetic Levitation",
+    clues: [
+      "An object is suspended in mid-air using only magnetic forces.",
+      "Earnshaw's theorem says it is impossible with static permanent magnets alone.",
+      "Superconductors can do it via the Meissner effect, locking themselves above a magnet.",
+      "Maglev trains use it to glide without contact, hitting speeds over 500 km/h.",
+      "It is also used in flywheels, friction-free bearings, and some toys."
+    ]
+  },
+  {
+    answer: "Bose-Einstein Condensate",
+    clues: [
+      "Atoms cooled to near absolute zero collapse into a single quantum state.",
+      "All particles in this state behave identically, like a single super-atom.",
+      "It was predicted by Bose and Einstein in 1924–25 but not realised until 1995.",
+      "It is sometimes called the 'fifth state of matter' alongside solids, liquids, gases, and plasma.",
+      "Wieman, Cornell, and Ketterle won the 2001 Nobel Prize for creating it."
+    ]
+  },
+  {
+    answer: "Refraction",
+    clues: [
+      "Light bends when it passes from one transparent medium to another.",
+      "It is the reason a straw in a glass of water appears to be broken.",
+      "Snell's Law mathematically relates the angles of incidence and refraction.",
+      "Different colours bend by different amounts, splitting white light into a spectrum.",
+      "It is the principle behind all camera and eyeglass lenses."
+    ]
+  },
+  {
+    answer: "Centripetal Force",
+    clues: [
+      "An inward-directed force that keeps an object moving in a circular path.",
+      "Without it, the object would fly off along a straight tangent line.",
+      "It is not a fundamental force but a label for whatever force happens to point inward.",
+      "Gravity provides it for orbiting planets; tension does for a ball on a string.",
+      "Its magnitude is mass times velocity squared divided by the radius of motion."
+    ]
+  },
+  {
+    answer: "Photoelectric Effect",
+    clues: [
+      "Shining light on certain metals causes electrons to be ejected from the surface.",
+      "Increasing the brightness produces more electrons but not faster ones.",
+      "Only frequencies above a threshold produce any electrons at all.",
+      "Einstein explained it in 1905 by proposing that light comes in discrete packets.",
+      "It won him the 1921 Nobel Prize in Physics, not relativity."
+    ]
+  },
+  {
+    answer: "Schrödinger's Cat",
+    clues: [
+      "A thought experiment about a hypothetical cat in a sealed box with a radioactive trigger.",
+      "Until observed, the cat is said to be simultaneously alive and dead.",
+      "It was designed to illustrate the apparent absurdity of quantum superposition at macroscopic scales.",
+      "Its author actually intended it as a criticism, not a demonstration, of the Copenhagen interpretation.",
+      "It has become the most famous example used to introduce quantum mechanics to the public."
+    ]
+  },
+  {
+    answer: "Standing Wave",
+    clues: [
+      "Two waves of equal frequency travel in opposite directions and interfere.",
+      "The resulting pattern has fixed points called nodes that never move.",
+      "It is what produces musical notes on a vibrating guitar string.",
+      "The allowed frequencies are determined by the length of the medium.",
+      "Electron orbitals in atoms are three-dimensional examples of this phenomenon."
+    ]
+  },
+  {
+    answer: "Magnetism",
+    clues: [
+      "Certain materials attract iron and align with the Earth's field.",
+      "Moving electric charges create this force, and vice versa.",
+      "It is one of the two components of the electromagnetic interaction.",
+      "Permanent versions arise from the aligned spins of electrons in a material.",
+      "Earth's field reverses polarity every few hundred thousand years on average."
+    ]
+  },
+  {
+    answer: "Resonance",
+    clues: [
+      "A system absorbs energy maximally when driven at its natural frequency.",
+      "Small repeated pushes at the right rhythm produce huge amplitude.",
+      "It can shatter wine glasses when an opera singer hits exactly the right note.",
+      "It is exploited in radios to select a specific station's frequency.",
+      "The 1940 collapse of the Tacoma Narrows Bridge is often attributed to it (though the real cause was aeroelastic flutter)."
+    ]
   }
 ]

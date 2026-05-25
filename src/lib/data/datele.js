@@ -149,5 +149,170 @@ export const events = [
     event: "Charles Darwin published On the Origin of Species",
     month: 11, year: 1859, day: 24,
     hint: "The entire first print run of 1,250 copies sold out on the first day."
+  },
+  {
+    event: "The Titanic sank in the North Atlantic after striking an iceberg",
+    month: 4, year: 1912, day: 15,
+    hint: "It went down on its maiden voyage from Southampton to New York; more than 1,500 perished."
+  },
+  {
+    event: "Russia's Tsar Nicholas II abdicated, ending three centuries of Romanov rule",
+    month: 3, year: 1917, day: 15,
+    hint: "He stepped down during what became known as the February Revolution (Julian calendar)."
+  },
+  {
+    event: "World War I officially ended with the signing of an armistice",
+    month: 11, year: 1918, day: 11,
+    hint: "Fighting ceased at the 11th hour of the 11th day of the 11th month; commemorated as Remembrance/Armistice Day."
+  },
+  {
+    event: "The US stock market crashed, triggering the Great Depression",
+    month: 10, year: 1929, day: 29,
+    hint: "The pivotal day became known as 'Black Tuesday' on Wall Street."
+  },
+  {
+    event: "Germany invaded Poland, starting World War II in Europe",
+    month: 9, year: 1939, day: 1,
+    hint: "Britain and France declared war two days later."
+  },
+  {
+    event: "D-Day: Allied forces landed on the beaches of Normandy",
+    month: 6, year: 1944, day: 6,
+    hint: "Operation Overlord involved about 160,000 troops landing on five French beaches."
+  },
+  {
+    event: "Atomic bombs were dropped on Hiroshima",
+    month: 8, year: 1945, day: 6,
+    hint: "A second bomb was dropped on Nagasaki three days later."
+  },
+  {
+    event: "Japan formally surrendered, ending World War II",
+    month: 9, year: 1945, day: 2,
+    hint: "The signing took place aboard the USS Missouri in Tokyo Bay."
+  },
+  {
+    event: "Mohandas Gandhi was assassinated in New Delhi",
+    month: 1, year: 1948, day: 30,
+    hint: "He was shot three times by Nathuram Godse on his way to evening prayers."
+  },
+  {
+    event: "John F. Kennedy was assassinated in Dallas, Texas",
+    month: 11, year: 1963, day: 22,
+    hint: "He was riding in an open-top motorcade through Dealey Plaza."
+  },
+  {
+    event: "Martin Luther King Jr. was assassinated in Memphis, Tennessee",
+    month: 4, year: 1968, day: 4,
+    hint: "He was shot on the balcony of the Lorraine Motel."
+  },
+  {
+    event: "The Chernobyl nuclear power plant suffered a catastrophic explosion",
+    month: 4, year: 1986, day: 26,
+    hint: "Reactor No. 4 exploded during a safety test in Soviet Ukraine."
+  },
+  {
+    event: "Nelson Mandela was released from prison after 27 years",
+    month: 2, year: 1990, day: 11,
+    hint: "He walked free from Victor Verster Prison in South Africa."
+  },
+  {
+    event: "The Soviet Union officially dissolved",
+    month: 12, year: 1991, day: 26,
+    hint: "The Supreme Soviet adopted a declaration recognising the independence of the former Soviet republics."
+  },
+  {
+    event: "Princess Diana died in a car crash in a Paris tunnel",
+    month: 8, year: 1997, day: 31,
+    hint: "Her funeral was watched by an estimated 2.5 billion people worldwide."
+  },
+  {
+    event: "The Eurozone introduced euro banknotes and coins into circulation",
+    month: 1, year: 2002, day: 1,
+    hint: "12 European Union countries adopted the new currency simultaneously."
+  },
+  {
+    event: "Hurricane Katrina made landfall on the US Gulf Coast",
+    month: 8, year: 2005, day: 29,
+    hint: "The storm devastated New Orleans after the city's levees failed."
+  },
+  {
+    event: "Barack Obama was inaugurated as the first Black US President",
+    month: 1, year: 2009, day: 20,
+    hint: "He took the oath of office on the steps of the US Capitol building."
+  },
+  {
+    event: "Osama bin Laden was killed in a US special forces raid in Pakistan",
+    month: 5, year: 2011, day: 2,
+    hint: "Navy SEALs raided his compound in Abbottabad."
+  },
+  {
+    event: "The World Health Organization declared COVID-19 a global pandemic",
+    month: 3, year: 2020, day: 11,
+    hint: "By then the virus had spread to over 100 countries."
+  },
+  {
+    event: "The Russian military launched a full-scale invasion of Ukraine",
+    month: 2, year: 2022, day: 24,
+    hint: "Vladimir Putin announced a 'special military operation' before dawn."
+  },
+  {
+    event: "The first transatlantic telegraph cable transmitted its inaugural message",
+    month: 8, year: 1858, day: 16,
+    hint: "Queen Victoria sent a message of greeting to US President James Buchanan."
+  },
+  {
+    event: "The Wright Brothers made the first powered, controlled airplane flight",
+    month: 12, year: 1903, day: 17,
+    hint: "It took place near Kitty Hawk, North Carolina and lasted 12 seconds."
+  },
+  {
+    event: "The RMS Lusitania was sunk by a German U-boat off the coast of Ireland",
+    month: 5, year: 1915, day: 7,
+    hint: "Nearly 1,200 people died, including 128 Americans, helping turn US opinion toward WWI."
+  },
+  {
+    event: "The Treaty of Versailles was signed, formally ending WWI",
+    month: 6, year: 1919, day: 28,
+    hint: "It was signed in the Hall of Mirrors at the Palace of Versailles, exactly five years after the assassination that started the war."
+  },
+  {
+    event: "Penicillin's antibacterial properties were discovered by Alexander Fleming",
+    month: 9, year: 1928, day: 28,
+    hint: "He returned from holiday to find a Petri dish contaminated with mould had killed surrounding bacteria."
+  },
+  {
+    event: "The Hindenburg airship caught fire and crashed in Lakehurst, New Jersey",
+    month: 5, year: 1937, day: 6,
+    hint: "Of the 97 people on board, 35 died along with one member of the ground crew."
+  },
+  {
+    event: "Israel declared independence as a sovereign state",
+    month: 5, year: 1948, day: 14,
+    hint: "David Ben-Gurion read the proclamation in Tel Aviv hours before the British Mandate expired."
+  },
+  {
+    event: "Sputnik 1, the first artificial satellite, was launched into orbit",
+    month: 10, year: 1957, day: 4,
+    hint: "It was launched from the Baikonur Cosmodrome and circled the Earth in 96 minutes."
+  },
+  {
+    event: "Yuri Gagarin became the first human to journey into outer space",
+    month: 4, year: 1961, day: 12,
+    hint: "His Vostok 1 spacecraft completed one orbit of the Earth in 108 minutes."
+  },
+  {
+    event: "The Cuban Missile Crisis began when US reconnaissance discovered Soviet missile sites",
+    month: 10, year: 1962, day: 14,
+    hint: "President Kennedy addressed the nation about the crisis on October 22; it lasted 13 days in total."
+  },
+  {
+    event: "The British colony of Hong Kong was handed back to China",
+    month: 7, year: 1997, day: 1,
+    hint: "It became a Special Administrative Region under a 'one country, two systems' arrangement."
+  },
+  {
+    event: "The Mars rover Curiosity successfully landed on the Red Planet",
+    month: 8, year: 2012, day: 6,
+    hint: "It used a novel 'sky crane' landing system at Gale Crater."
   }
 ]
