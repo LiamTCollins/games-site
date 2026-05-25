@@ -99,13 +99,13 @@
     <div class="page-header justify-between">
       <a href="/" class="back-btn">← Hub</a>
       <div class="flex items-center gap-3">
-        {#if streak.current > 0}<span class="text-xs text-teal-400">🔥 {streak.current}</span>{/if}
+        {#if streak.current > 0}<span class="text-xs text-teal-400">Streak: {streak.current}</span>{/if}
         <span class="text-xs text-slate-500">Day #{gameNumber}</span>
       </div>
     </div>
 
     <div class="text-center mb-6">
-      <h1 class="text-2xl font-bold text-white mb-1">🔬 Elemently</h1>
+      <h1 class="text-2xl font-bold text-white mb-1">Elemently</h1>
       <p class="text-sm text-slate-400">Guess the <span class="text-teal-400 font-semibold">atomic number</span> of the element.</p>
     </div>
 

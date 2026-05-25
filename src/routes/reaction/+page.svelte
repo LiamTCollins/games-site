@@ -87,7 +87,7 @@
     </div>
 
     <div class="text-center mb-8">
-      <h1 class="text-2xl font-bold text-white mb-1">⏱️ Reactionle</h1>
+      <h1 class="text-2xl font-bold text-white mb-1">Reactionle</h1>
       <p class="text-sm text-slate-400">Stop the timer as close to <span class="text-green-400 font-semibold">5.000s</span> as you can.</p>
     </div>
 

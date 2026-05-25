@@ -75,13 +75,13 @@
     <div class="page-header justify-between">
       <a href="/" class="back-btn">← Hub</a>
       <div class="flex items-center gap-3">
-        {#if streak.current > 0}<span class="text-xs text-orange-400">🔥 {streak.current}</span>{/if}
+        {#if streak.current > 0}<span class="text-xs text-orange-400">Streak: {streak.current}</span>{/if}
         <span class="text-xs text-slate-500">Day #{gameNumber}</span>
       </div>
     </div>
 
     <div class="text-center mb-6">
-      <h1 class="text-2xl font-bold text-white mb-1">🏆 Sportle</h1>
+      <h1 class="text-2xl font-bold text-white mb-1">Sportle</h1>
       <p class="text-sm text-slate-400">Reveal clues, then pick the sport from the bank. <span class="text-orange-400 font-semibold">One guess.</span></p>
     </div>
 

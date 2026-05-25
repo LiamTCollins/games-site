@@ -70,7 +70,7 @@
     </div>
 
     <div class="text-center mb-8">
-      <h1 class="text-2xl font-bold text-white mb-1">👆 Blindtap</h1>
+      <h1 class="text-2xl font-bold text-white mb-1">Blindtap</h1>
       <p class="text-sm text-slate-400">No timer. Press start, then tap STOP after exactly <span class="text-blue-400 font-semibold">5 seconds</span>.</p>
     </div>
 

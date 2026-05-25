@@ -13,13 +13,18 @@
 
   <div class="relative">
     <div class="flex items-start justify-between mb-3">
-      <span class="text-3xl">{emoji}</span>
+      <span
+        class="inline-flex items-center justify-center w-10 h-10 rounded-lg text-base font-bold tracking-tight"
+        style="background: {color}22; color: {color}; border: 1px solid {color}44;"
+      >
+        {name.slice(0, 2)}
+      </span>
       <div class="flex items-center gap-2">
         {#if streak > 0}
-          <span class="tag" style="background: {color}22; color: {color}">🔥 {streak}</span>
+          <span class="tag" style="background: {color}22; color: {color}">{streak}</span>
         {/if}
         {#if played}
-          <span class="tag bg-green-500/15 text-green-400">✓ Done</span>
+          <span class="tag bg-green-500/15 text-green-400">Done</span>
         {/if}
       </div>
     </div>
