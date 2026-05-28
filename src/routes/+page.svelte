@@ -34,12 +34,37 @@
   })
 
   $: playedCount = Object.values(gameStatuses).filter(Boolean).length
+
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@graph': [
+      {
+        '@type': 'WebSite',
+        name: 'daily-le.com',
+        url: 'https://daily-le.com/',
+        description: 'Eleven free daily puzzle games covering geography, history, science, sports, and language.'
+      },
+      {
+        '@type': 'ItemList',
+        name: 'Daily Games',
+        itemListElement: games.map((g, i) => ({
+          '@type': 'ListItem',
+          position: i + 1,
+          name: g.name,
+          url: `https://daily-le.com${g.route}`,
+          description: g.description
+        }))
+      }
+    ]
+  }
+  const jsonLdScript = `<script type="application/ld+json">${JSON.stringify(jsonLd)}<\/script>`
 </script>
 
 <svelte:head>
   <title>daily-le.com — Daily Puzzle Games</title>
   <meta name="description" content="Eleven free daily puzzle games in one place: guess the sport, capital, language, US state, historical date, chemical element, and more. A fresh challenge every day." />
   <link rel="canonical" href="https://daily-le.com/" />
+  {@html jsonLdScript}
 </svelte:head>
 
 <main class="min-h-screen py-10 px-4">

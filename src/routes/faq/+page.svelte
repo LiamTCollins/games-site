@@ -11,12 +11,24 @@
     { q: 'How can I share my results?', a: 'After finishing a game, use the Share button to copy an emoji result grid to your clipboard. You can paste it into messages or social media without spoiling the answer for others.' },
     { q: 'How do I suggest a new game or report a bug?', a: 'We welcome feedback and ideas. You can reach us at contact@daily-le.com.' }
   ]
+
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: faqs.map(f => ({
+      '@type': 'Question',
+      name: f.q,
+      acceptedAnswer: { '@type': 'Answer', text: f.a }
+    }))
+  }
+  const jsonLdScript = `<script type="application/ld+json">${JSON.stringify(jsonLd)}<\/script>`
 </script>
 
 <svelte:head>
   <title>FAQ — Frequently Asked Questions — daily-le.com</title>
   <meta name="description" content="Frequently asked questions about daily-le.com: how the daily puzzles work, where progress is saved, how streaks work, and more." />
   <link rel="canonical" href="https://daily-le.com/faq" />
+  {@html jsonLdScript}
 </svelte:head>
 
 <main class="min-h-screen py-10 px-4">
