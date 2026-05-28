@@ -69,8 +69,27 @@
       {/each}
     </div>
 
-    <footer class="mt-12 text-center text-xs text-slate-600">
-      Resets daily at midnight UTC
+    <!-- Sister sites -->
+    <div class="mt-12 pt-8 border-t border-white/5">
+      <p class="text-center text-xs font-semibold uppercase tracking-wider text-slate-500 mb-4">More daily games</p>
+      <div class="flex flex-wrap justify-center gap-3">
+        <a href="https://popdle.com" target="_blank" rel="noopener"
+          class="card card-hover px-5 py-3 text-sm font-semibold text-slate-200 flex items-center gap-2">
+          Popdle <span class="text-slate-500">↗</span>
+        </a>
+        <a href="https://playquotedle.com" target="_blank" rel="noopener"
+          class="card card-hover px-5 py-3 text-sm font-semibold text-slate-200 flex items-center gap-2">
+          Quotedle <span class="text-slate-500">↗</span>
+        </a>
+      </div>
+    </div>
+
+    <footer class="mt-10 text-center text-xs text-slate-600 space-y-2">
+      <div class="flex justify-center gap-4">
+        <a href="/about" class="hover:text-slate-400">About</a>
+        <a href="/privacy" class="hover:text-slate-400">Privacy</a>
+      </div>
+      <p>Resets daily at midnight UTC · © {new Date().getFullYear()} daily-le.com</p>
     </footer>
   </div>
 </main>
