@@ -31,7 +31,7 @@
       <p>We may update this Privacy Policy from time to time. Any changes will be posted on this page with a revised "last updated" date.</p>
 
       <h2 class="text-lg font-semibold text-white pt-3">Contact</h2>
-      <p>If you have any questions about this Privacy Policy, please reach out through the contact details provided on the site.</p>
+      <p>If you have any questions about this Privacy Policy, please contact us at <a href="mailto:contact@daily-le.com" class="text-indigo-400 hover:underline">contact@daily-le.com</a>.</p>
     </div>
   </div>
 </main>

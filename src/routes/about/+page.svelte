@@ -31,7 +31,7 @@
       <h2 class="text-xl font-semibold text-white pt-4">How it works</h2>
       <p>There are no accounts and no logins. Your daily progress and your streaks are stored privately in your own browser using local storage. Nothing is uploaded to a server. Clear your browser data and your history resets.</p>
 
-      <p>Have feedback or an idea for a new game? We'd love to hear it.</p>
+      <p>Have feedback or an idea for a new game? We'd love to hear it at <a href="mailto:contact@daily-le.com" class="text-indigo-400 hover:underline">contact@daily-le.com</a>.</p>
     </div>
   </div>
 </main>
