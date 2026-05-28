@@ -68,7 +68,11 @@
   }
 </script>
 
-<svelte:head><title>Whodunit — daily-le.com</title></svelte:head>
+<svelte:head>
+  <title>Whodunit — daily-le.com</title>
+  <meta name="description" content="Identify a famous historical figure from progressive clues in this daily guessing game." />
+  <link rel="canonical" href="https://daily-le.com/whodunit" />
+</svelte:head>
 
 <main class="min-h-screen py-10 px-4">
   <div class="max-w-lg mx-auto">

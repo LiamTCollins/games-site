@@ -74,7 +74,11 @@
   }
 </script>
 
-<svelte:head><title>Statele — daily-le.com</title></svelte:head>
+<svelte:head>
+  <title>Statele — daily-le.com</title>
+  <meta name="description" content="Name the US state or territory a city belongs to in this daily geography game." />
+  <link rel="canonical" href="https://daily-le.com/statele" />
+</svelte:head>
 
 <main class="min-h-screen py-10 px-4">
   <div class="max-w-lg mx-auto">

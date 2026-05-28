@@ -107,7 +107,11 @@
   }
 </script>
 
-<svelte:head><title>Datele — daily-le.com</title></svelte:head>
+<svelte:head>
+  <title>Datele — daily-le.com</title>
+  <meta name="description" content="Guess the month and year of a famous historical event in this daily history game." />
+  <link rel="canonical" href="https://daily-le.com/datele" />
+</svelte:head>
 
 <main class="min-h-screen py-10 px-4">
   <div class="max-w-lg mx-auto">

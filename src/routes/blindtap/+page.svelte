@@ -59,7 +59,11 @@
 </script>
 
 <svelte:window on:keydown={handleKey} />
-<svelte:head><title>Blindtap — daily-le.com</title></svelte:head>
+<svelte:head>
+  <title>Blindtap — daily-le.com</title>
+  <meta name="description" content="Tap after exactly five seconds with no visible timer in this daily time-perception challenge." />
+  <link rel="canonical" href="https://daily-le.com/blindtap" />
+</svelte:head>
 
 <main class="min-h-screen flex flex-col items-center justify-center px-4 py-10">
   <div class="w-full max-w-sm">

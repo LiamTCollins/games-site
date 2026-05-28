@@ -66,7 +66,11 @@
   }
 </script>
 
-<svelte:head><title>Physicsle — daily-le.com</title></svelte:head>
+<svelte:head>
+  <title>Physicsle — daily-le.com</title>
+  <meta name="description" content="Identify the physics phenomenon from progressive clues in this daily science game." />
+  <link rel="canonical" href="https://daily-le.com/physicsle" />
+</svelte:head>
 
 <main class="min-h-screen py-10 px-4">
   <div class="max-w-lg mx-auto">

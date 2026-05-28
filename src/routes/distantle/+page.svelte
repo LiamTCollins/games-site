@@ -86,7 +86,11 @@
   }
 </script>
 
-<svelte:head><title>Distantle — daily-le.com</title></svelte:head>
+<svelte:head>
+  <title>Distantle — daily-le.com</title>
+  <meta name="description" content="Estimate the distance in kilometres between two world cities in this daily geography game." />
+  <link rel="canonical" href="https://daily-le.com/distantle" />
+</svelte:head>
 
 <main class="min-h-screen py-10 px-4">
   <div class="max-w-lg mx-auto">

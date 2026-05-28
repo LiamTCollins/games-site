@@ -67,7 +67,11 @@
   }
 </script>
 
-<svelte:head><title>Sportle — daily-le.com</title></svelte:head>
+<svelte:head>
+  <title>Sportle — daily-le.com</title>
+  <meta name="description" content="Name the sport from its description in this daily game featuring famous and obscure sports." />
+  <link rel="canonical" href="https://daily-le.com/sportle" />
+</svelte:head>
 
 <main class="min-h-screen py-10 px-4">
   <div class="max-w-lg mx-auto">

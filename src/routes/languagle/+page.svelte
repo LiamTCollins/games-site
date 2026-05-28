@@ -67,7 +67,11 @@
   }
 </script>
 
-<svelte:head><title>Languagle — daily-le.com</title></svelte:head>
+<svelte:head>
+  <title>Languagle — daily-le.com</title>
+  <meta name="description" content="Identify a world language from a short text snippet in this daily linguistics game." />
+  <link rel="canonical" href="https://daily-le.com/languagle" />
+</svelte:head>
 
 <main class="min-h-screen py-10 px-4">
   <div class="max-w-lg mx-auto">

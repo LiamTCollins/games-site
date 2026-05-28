@@ -53,7 +53,11 @@
   }
 </script>
 
-<svelte:head><title>Capitdle — daily-le.com</title></svelte:head>
+<svelte:head>
+  <title>Capitdle — daily-le.com</title>
+  <meta name="description" content="Name the capital city of a given country in this daily world-geography game." />
+  <link rel="canonical" href="https://daily-le.com/capitdle" />
+</svelte:head>
 
 <main class="min-h-screen py-10 px-4">
   <div class="max-w-lg mx-auto">

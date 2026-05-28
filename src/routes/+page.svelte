@@ -38,6 +38,8 @@
 
 <svelte:head>
   <title>daily-le.com — Daily Puzzle Games</title>
+  <meta name="description" content="Eleven free daily puzzle games in one place: guess the sport, capital, language, US state, historical date, chemical element, and more. A fresh challenge every day." />
+  <link rel="canonical" href="https://daily-le.com/" />
 </svelte:head>
 
 <main class="min-h-screen py-10 px-4">
@@ -85,8 +87,10 @@
     </div>
 
     <footer class="mt-10 text-center text-xs text-slate-600 space-y-2">
-      <div class="flex justify-center gap-4">
+      <div class="flex flex-wrap justify-center gap-4">
         <a href="/about" class="hover:text-slate-400">About</a>
+        <a href="/how-to-play" class="hover:text-slate-400">Guides</a>
+        <a href="/faq" class="hover:text-slate-400">FAQ</a>
         <a href="/privacy" class="hover:text-slate-400">Privacy</a>
       </div>
       <p>Resets daily at midnight UTC · © {new Date().getFullYear()} daily-le.com</p>

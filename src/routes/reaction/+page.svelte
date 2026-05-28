@@ -76,7 +76,11 @@
 
 <svelte:window on:keydown={handleKey} />
 
-<svelte:head><title>Reactionle — daily-le.com</title></svelte:head>
+<svelte:head>
+  <title>Reactionle — daily-le.com</title>
+  <meta name="description" content="Stop the timer as close to five seconds as you can in this daily reaction-timing game." />
+  <link rel="canonical" href="https://daily-le.com/reaction" />
+</svelte:head>
 
 <main class="min-h-screen flex flex-col items-center justify-center px-4 py-10">
   <div class="w-full max-w-sm">

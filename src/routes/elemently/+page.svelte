@@ -91,7 +91,11 @@
   $: groupLabel = puzzle.group ? `Group ${puzzle.group}` : 'Lanthanide/Actinide series'
 </script>
 
-<svelte:head><title>Elemently — daily-le.com</title></svelte:head>
+<svelte:head>
+  <title>Elemently — daily-le.com</title>
+  <meta name="description" content="Guess a chemical element atomic number with hot and cold feedback in this daily chemistry game." />
+  <link rel="canonical" href="https://daily-le.com/elemently" />
+</svelte:head>
 
 <main class="min-h-screen py-10 px-4">
   <div class="max-w-lg mx-auto">
