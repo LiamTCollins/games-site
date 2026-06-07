@@ -9,7 +9,7 @@
   const allPeople = [...new Set(people.map(p => p.answer))].sort()
 
   const GAME_ID = 'whodunit'
-  const COLOR = '#a855f7'
+  const COLOR = '#285b7a'
   const todayKey = getTodayKey()
   const gameNumber = getDailyNumber()
   const puzzle = people[getDailyIndex(people.length)]
@@ -80,7 +80,7 @@
     <div class="page-header justify-between">
       <a href="/" class="back-btn">← Hub</a>
       <div class="flex items-center gap-3">
-        {#if streak.current > 0}<span class="text-xs text-purple-400">Streak: {streak.current}</span>{/if}
+        {#if streak.current > 0}<span class="text-xs text-accent">Streak: {streak.current}</span>{/if}
         <span class="text-xs text-slate-500">Day #{gameNumber}</span>
       </div>
     </div>
@@ -94,13 +94,13 @@
     <div class="space-y-2 mb-6">
       {#each puzzle.clues.slice(0, cluesRevealed) as clue, i}
         <div class="clue-card flex gap-3 items-start">
-          <span class="tag mt-0.5 shrink-0" style="background:#a855f722;color:#a855f7">#{i + 1}</span>
+          <span class="tag mt-0.5 shrink-0" style="background:#285b7a22;color:#285b7a">#{i + 1}</span>
           <p class="text-slate-200 text-sm leading-relaxed">{clue}</p>
         </div>
       {/each}
       {#each Array(MAX_CLUES - cluesRevealed) as _, i}
         <div class="clue-card flex gap-3 items-center opacity-30">
-          <span class="tag" style="background:#a855f711;color:#a855f7">#{cluesRevealed + i + 1}</span>
+          <span class="tag" style="background:#285b7a11;color:#285b7a">#{cluesRevealed + i + 1}</span>
           <p class="text-slate-500 text-sm">Locked — make a guess to reveal</p>
         </div>
       {/each}
@@ -126,7 +126,7 @@
     {/if}
 
     {#if gameOver}
-      <ResultBar {won} answer={puzzle.answer} shareText={getShareText()} color="#a855f7" onShowModal={() => showModal = true} />
+      <ResultBar {won} answer={puzzle.answer} shareText={getShareText()} color="#285b7a" onShowModal={() => showModal = true} />
     {/if}
 
   </div>

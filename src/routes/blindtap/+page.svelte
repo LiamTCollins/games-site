@@ -75,17 +75,17 @@
 
     <div class="text-center mb-8">
       <h1 class="text-2xl font-bold text-white mb-1">Blindtap</h1>
-      <p class="text-sm text-slate-400">No timer. Press start, then tap STOP after exactly <span class="text-blue-400 font-semibold">5 seconds</span>.</p>
+      <p class="text-sm text-slate-400">No timer. Press start, then tap STOP after exactly <span class="text-accent font-semibold">5 seconds</span>.</p>
     </div>
 
     <!-- Display -->
-    <div class="card p-10 text-center mb-6" style="border-color: rgba(59,130,246,0.2)">
+    <div class="card p-10 text-center mb-6" style="border-color: var(--rule)">
       {#if phase === 'ready'}
         <div class="text-5xl mb-2">👆</div>
         <p class="text-slate-400 text-sm">Feel the rhythm. No peeking.</p>
       {:else if phase === 'running'}
         <div class="text-5xl mb-2 animate-pulse">⏳</div>
-        <p class="text-blue-400 font-semibold">Counting… tap when you feel 5 seconds.</p>
+        <p class="text-accent font-semibold">Counting… tap when you feel 5 seconds.</p>
       {:else}
         <div class="text-5xl font-mono font-bold tabular-nums mb-2"
           class:text-green-400={score < 200}
@@ -98,11 +98,11 @@
     </div>
 
     {#if phase === 'ready'}
-      <button class="btn w-full text-white text-lg py-4" style="background:#3b82f6" on:click={startRun}>
+      <button class="btn w-full text-white text-lg py-4" style="background:#285b7a" on:click={startRun}>
         START
       </button>
     {:else if phase === 'running'}
-      <button class="btn w-full text-white text-lg py-4" style="background:#3b82f6" on:click={stop}>
+      <button class="btn w-full text-white text-lg py-4" style="background:#285b7a" on:click={stop}>
         STOP
       </button>
     {:else}
@@ -111,7 +111,7 @@
     {/if}
 
     {#if phase === 'done'}
-      <ResultBar won={score < 500} answer="5.000s" shareText={getShareText()} color="#3b82f6" onShowModal={() => showModal = true} />
+      <ResultBar won={score < 500} answer="5.000s" shareText={getShareText()} color="#285b7a" onShowModal={() => showModal = true} />
     {/if}
 
   </div>
@@ -122,7 +122,7 @@
     won={score < 500}
     answer="5.000s"
     shareText={getShareText()}
-    color="#3b82f6"
+    color="#285b7a"
     onClose={() => showModal = false}
   />
 {/if}

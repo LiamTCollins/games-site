@@ -6,7 +6,7 @@
   import ResultBar from '$lib/components/ResultBar.svelte'
 
   const GAME_ID = 'sportle'
-  const COLOR = '#f97316'
+  const COLOR = '#285b7a'
   const todayKey = getTodayKey()
   const gameNumber = getDailyNumber()
   const puzzle = sports[getDailyIndex(sports.length)]
@@ -79,27 +79,27 @@
     <div class="page-header justify-between">
       <a href="/" class="back-btn">← Hub</a>
       <div class="flex items-center gap-3">
-        {#if streak.current > 0}<span class="text-xs text-orange-400">Streak: {streak.current}</span>{/if}
+        {#if streak.current > 0}<span class="text-xs text-accent">Streak: {streak.current}</span>{/if}
         <span class="text-xs text-slate-500">Day #{gameNumber}</span>
       </div>
     </div>
 
     <div class="text-center mb-6">
       <h1 class="text-2xl font-bold text-white mb-1">Sportle</h1>
-      <p class="text-sm text-slate-400">Reveal clues, then pick the sport from the bank. <span class="text-orange-400 font-semibold">One guess.</span></p>
+      <p class="text-sm text-slate-400">Reveal clues, then pick the sport from the bank. <span class="text-accent font-semibold">One guess.</span></p>
     </div>
 
     <!-- Clues -->
     <div class="space-y-2 mb-4">
       {#each puzzle.clues.slice(0, cluesRevealed) as clue, i}
         <div class="clue-card flex gap-3 items-start">
-          <span class="tag mt-0.5 shrink-0" style="background:#f9731622;color:#f97316">#{i + 1}</span>
+          <span class="tag mt-0.5 shrink-0" style="background:#285b7a22;color:#285b7a">#{i + 1}</span>
           <p class="text-slate-200 text-sm leading-relaxed">{clue}</p>
         </div>
       {/each}
       {#each Array(MAX_CLUES - cluesRevealed) as _, i}
         <div class="clue-card flex gap-3 items-center opacity-30">
-          <span class="tag" style="background:#f9731611;color:#f97316">#{cluesRevealed + i + 1}</span>
+          <span class="tag" style="background:#285b7a11;color:#285b7a">#{cluesRevealed + i + 1}</span>
           <p class="text-slate-500 text-sm">Locked</p>
         </div>
       {/each}
@@ -120,10 +120,10 @@
       <div class="flex flex-wrap gap-2 mb-4">
         {#each allSports as sport}
           <button
-            class="px-3 py-1.5 rounded-lg text-sm font-medium border transition-all"
+            class="px-3 py-1.5 rounded text-sm font-medium border transition-all"
             style={selected === sport
-              ? `background:${COLOR}33; border-color:${COLOR}; color:white;`
-              : 'background:rgba(255,255,255,0.04); border-color:rgba(255,255,255,0.1); color:#94a3b8;'}
+              ? `background:${COLOR}; border-color:${COLOR}; color:var(--paper);`
+              : 'background:var(--paper-raised); border-color:var(--rule); color:var(--ink-soft);'}
             on:click={() => selectSport(sport)}
           >
             {sport}
@@ -133,7 +133,7 @@
 
       <button
         class="btn w-full text-white"
-        style="background:#f97316"
+        style="background:#285b7a"
         on:click={submitGuess}
         disabled={!selected}
       >
@@ -145,12 +145,12 @@
       <div class="flex flex-wrap gap-2 mb-4">
         {#each allSports as sport}
           <div
-            class="px-3 py-1.5 rounded-lg text-sm font-medium border"
+            class="px-3 py-1.5 rounded text-sm font-medium border"
             style={sport === puzzle.answer
-              ? 'background:rgba(34,197,94,0.15); border-color:rgba(34,197,94,0.4); color:#4ade80;'
+              ? 'background:#e9f1ea; border-color:#c2d9c6; color:#2f6b46;'
               : sport === selected && !won
-              ? 'background:rgba(239,68,68,0.1); border-color:rgba(239,68,68,0.3); color:#f87171;'
-              : 'background:rgba(255,255,255,0.03); border-color:rgba(255,255,255,0.06); color:#475569;'}
+              ? 'background:#f5e8e3; border-color:#e2c7bb; color:#9c3b28;'
+              : 'background:transparent; border-color:var(--rule); color:var(--muted);'}
           >
             {sport}
           </div>

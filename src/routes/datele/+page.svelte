@@ -6,7 +6,7 @@
   import ResultBar from '$lib/components/ResultBar.svelte'
 
   const GAME_ID = 'datele'
-  const COLOR = '#eab308'
+  const COLOR = '#285b7a'
   const MAX_GUESSES = 6
   const todayKey = getTodayKey()
   const gameNumber = getDailyNumber()
@@ -119,21 +119,21 @@
     <div class="page-header justify-between">
       <a href="/" class="back-btn">← Hub</a>
       <div class="flex items-center gap-3">
-        {#if streak.current > 0}<span class="text-xs text-yellow-400">Streak: {streak.current}</span>{/if}
+        {#if streak.current > 0}<span class="text-xs text-accent">Streak: {streak.current}</span>{/if}
         <span class="text-xs text-slate-500">Day #{gameNumber}</span>
       </div>
     </div>
 
     <div class="text-center mb-6">
       <h1 class="text-2xl font-bold text-white mb-1">Datele</h1>
-      <p class="text-sm text-slate-400">Guess the <span class="text-yellow-400 font-semibold">month and year</span> of a historical event.</p>
+      <p class="text-sm text-slate-400">Guess the <span class="text-accent font-semibold">month and year</span> of a historical event.</p>
     </div>
 
     <!-- Event -->
-    <div class="card p-5 mb-6" style="border-color:rgba(234,179,8,0.2)">
+    <div class="card p-5 mb-6" style="border-color:var(--rule)">
       <p class="text-white leading-relaxed font-medium">{puzzle.event}</p>
       {#if puzzle.hint && (gameOver || guesses.length >= 3)}
-        <p class="text-slate-400 text-sm mt-3 pt-3 border-t border-white/5">💡 {puzzle.hint}</p>
+        <p class="text-slate-400 text-sm mt-3 pt-3" style="border-top:1px solid var(--rule)">💡 {puzzle.hint}</p>
       {/if}
     </div>
 
@@ -171,7 +171,7 @@
         />
         <button
           class="btn text-white shrink-0"
-          style="background:#eab308"
+          style="background:#285b7a"
           on:click={submitGuess}
           disabled={!month || !year}
         >
@@ -183,8 +183,8 @@
 
     <!-- Bonus round -->
     {#if bonusActive}
-      <div class="card mt-4 p-5" style="border-color:rgba(234,179,8,0.3)">
-        <p class="text-yellow-400 font-semibold mb-1">🎯 Bonus Round!</p>
+      <div class="card mt-4 p-5" style="border-color:var(--rule)">
+        <p class="text-accent font-semibold mb-1">🎯 Bonus Round!</p>
         <p class="text-slate-300 text-sm mb-4">You got the month and year. Now guess the exact <strong class="text-white">day</strong> (1–31) for a bonus point.</p>
         {#if bonusWon === null}
           <div class="flex gap-2">
@@ -196,7 +196,7 @@
               min="1"
               max="31"
             />
-            <button class="btn text-white shrink-0" style="background:#eab308" on:click={submitBonus} disabled={!dayGuess}>
+            <button class="btn text-white shrink-0" style="background:#285b7a" on:click={submitBonus} disabled={!dayGuess}>
               Guess
             </button>
           </div>
@@ -209,7 +209,7 @@
     {/if}
 
     {#if gameOver}
-      <ResultBar {won} answer="{MONTHS[puzzle.month - 1]} {puzzle.day}, {puzzle.year}" shareText={getShareText()} color="#eab308" onShowModal={() => showModal = true} />
+      <ResultBar {won} answer="{MONTHS[puzzle.month - 1]} {puzzle.day}, {puzzle.year}" shareText={getShareText()} color="#285b7a" onShowModal={() => showModal = true} />
     {/if}
 
   </div>
@@ -226,5 +226,5 @@
 {/if}
 
 <style>
-  select.input-field option { background: #0f0f1a; }
+  select.input-field option { background: #fffdf9; }
 </style>

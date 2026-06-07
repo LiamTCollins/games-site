@@ -6,7 +6,7 @@
   import ResultBar from '$lib/components/ResultBar.svelte'
 
   const GAME_ID = 'distantle'
-  const COLOR = '#f59e0b'
+  const COLOR = '#285b7a'
   const MAX_GUESSES = 5
   const TOLERANCE_PCT = 5  // within 5% = win
   const todayKey = getTodayKey()
@@ -98,24 +98,24 @@
     <div class="page-header justify-between">
       <a href="/" class="back-btn">← Hub</a>
       <div class="flex items-center gap-3">
-        {#if streak.current > 0}<span class="text-xs text-amber-400">Streak: {streak.current}</span>{/if}
+        {#if streak.current > 0}<span class="text-xs text-accent">Streak: {streak.current}</span>{/if}
         <span class="text-xs text-slate-500">Day #{gameNumber}</span>
       </div>
     </div>
 
     <div class="text-center mb-6">
       <h1 class="text-2xl font-bold text-white mb-1">Distantle</h1>
-      <p class="text-sm text-slate-400">Guess the <span class="text-amber-400 font-semibold">distance in km</span> between these two cities. Within {TOLERANCE_PCT}% = win.</p>
+      <p class="text-sm text-slate-400">Guess the <span class="text-accent font-semibold">distance in km</span> between these two cities. Within {TOLERANCE_PCT}% = win.</p>
     </div>
 
     <!-- Two cities -->
-    <div class="card p-6 mb-4 text-center" style="border-color:rgba(245,158,11,0.25)">
+    <div class="card p-6 mb-4 text-center" style="border-color:var(--rule)">
       <div class="grid grid-cols-3 items-center gap-2">
         <div>
           <p class="text-slate-400 text-[10px] uppercase tracking-wider mb-1">City A</p>
           <p class="text-2xl font-bold text-white leading-tight">{cityA.name}</p>
         </div>
-        <div class="text-3xl text-amber-400">⟷</div>
+        <div class="text-3xl text-accent">⟷</div>
         <div>
           <p class="text-slate-400 text-[10px] uppercase tracking-wider mb-1">City B</p>
           <p class="text-2xl font-bold text-white leading-tight">{cityB.name}</p>
@@ -145,7 +145,7 @@
           min="0"
           autofocus
         />
-        <button class="btn text-white shrink-0" style="background:#f59e0b" on:click={submitGuess} disabled={!input}>
+        <button class="btn text-white shrink-0" style="background:#285b7a" on:click={submitGuess} disabled={!input}>
           Guess
         </button>
       </div>

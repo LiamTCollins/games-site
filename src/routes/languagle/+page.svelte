@@ -9,7 +9,7 @@
   const allLanguages = [...new Set(languages.map(l => l.answer))].sort()
 
   const GAME_ID = 'languagle'
-  const COLOR = '#ec4899'
+  const COLOR = '#285b7a'
   const todayKey = getTodayKey()
   const gameNumber = getDailyNumber()
   const puzzle = languages[getDailyIndex(languages.length)]
@@ -79,7 +79,7 @@
     <div class="page-header justify-between">
       <a href="/" class="back-btn">← Hub</a>
       <div class="flex items-center gap-3">
-        {#if streak.current > 0}<span class="text-xs text-pink-400">Streak: {streak.current}</span>{/if}
+        {#if streak.current > 0}<span class="text-xs text-accent">Streak: {streak.current}</span>{/if}
         <span class="text-xs text-slate-500">Day #{gameNumber}</span>
       </div>
     </div>
@@ -90,8 +90,8 @@
     </div>
 
     <!-- Snippet (always visible) -->
-    <div class="card p-5 mb-4" style="border-color:rgba(236,72,153,0.25)">
-      <p class="text-xs text-pink-400 font-semibold uppercase tracking-wider mb-2">Text Snippet</p>
+    <div class="card p-5 mb-4" style="border-color:var(--rule)">
+      <p class="text-xs text-accent font-semibold uppercase tracking-wider mb-2">Text Snippet</p>
       <p class="text-white text-lg leading-relaxed font-medium italic">"{puzzle.snippet}"</p>
     </div>
 
@@ -100,13 +100,13 @@
       <div class="space-y-2 mb-4">
         {#each puzzle.clues.slice(0, cluesRevealed) as clue, i}
           <div class="clue-card flex gap-3 items-start">
-            <span class="tag mt-0.5 shrink-0" style="background:#ec489922;color:#ec4899">#{i + 1}</span>
+            <span class="tag mt-0.5 shrink-0" style="background:#285b7a22;color:#285b7a">#{i + 1}</span>
             <p class="text-slate-200 text-sm leading-relaxed">{clue}</p>
           </div>
         {/each}
         {#each Array(MAX_CLUES - cluesRevealed) as _, i}
           <div class="clue-card flex gap-3 items-center opacity-30">
-            <span class="tag" style="background:#ec489911;color:#ec4899">#{cluesRevealed + i + 1}</span>
+            <span class="tag" style="background:#285b7a11;color:#285b7a">#{cluesRevealed + i + 1}</span>
             <p class="text-slate-500 text-sm">Locked</p>
           </div>
         {/each}
@@ -133,7 +133,7 @@
     {/if}
 
     {#if gameOver}
-      <ResultBar {won} answer={puzzle.answer} shareText={getShareText()} color="#ec4899" onShowModal={() => showModal = true} />
+      <ResultBar {won} answer={puzzle.answer} shareText={getShareText()} color="#285b7a" onShowModal={() => showModal = true} />
     {/if}
 
   </div>

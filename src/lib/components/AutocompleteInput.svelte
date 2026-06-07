@@ -72,7 +72,7 @@
     />
     <button
       class="btn text-white shrink-0"
-      style="background:{color}"
+      style="background:{color}; border-color:{color}"
       on:click={submit}
       disabled={disabled || !isExactMatch}
     >
@@ -81,12 +81,12 @@
   </div>
 
   {#if showList && filtered.length > 0 && !disabled}
-    <ul class="absolute z-20 top-full left-0 right-20 mt-1 max-h-64 overflow-y-auto rounded-lg border border-white/10 bg-[#0f0f1a] shadow-xl">
+    <ul class="ac-list">
       {#each filtered as opt, i}
         <li>
           <button
-            class="w-full text-left px-3 py-2 text-sm transition-colors"
-            style="background: {i === highlightIdx ? color + '22' : 'transparent'}; color: {i === highlightIdx ? 'white' : '#cbd5e1'};"
+            class="ac-option"
+            class:active={i === highlightIdx}
             on:mousedown={() => pick(opt)}
             on:mouseenter={() => highlightIdx = i}
           >
@@ -98,6 +98,45 @@
   {/if}
 
   {#if value.trim().length > 0 && filtered.length === 0 && !disabled}
-    <p class="text-xs text-red-400 mt-1">No matching option — must be from the list</p>
+    <p class="ac-empty">No matching option — must be from the list</p>
   {/if}
 </div>
+
+<style>
+  .ac-list {
+    position: absolute;
+    z-index: 20;
+    top: 100%;
+    left: 0;
+    right: 5rem;
+    margin-top: 0.25rem;
+    max-height: 16rem;
+    overflow-y: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+    background: var(--paper-raised);
+    box-shadow: 0 6px 20px rgba(33, 32, 28, 0.12);
+    list-style: none;
+    padding: 0;
+  }
+  .ac-option {
+    width: 100%;
+    text-align: left;
+    padding: 0.5rem 0.75rem;
+    font-size: 0.875rem;
+    color: var(--ink-soft);
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    transition: background 0.1s, color 0.1s;
+  }
+  .ac-option.active {
+    background: var(--accent-tint);
+    color: var(--ink);
+  }
+  .ac-empty {
+    font-size: 0.75rem;
+    color: #9c3b28;
+    margin-top: 0.35rem;
+  }
+</style>

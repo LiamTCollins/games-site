@@ -7,7 +7,7 @@
   import AutocompleteInput from '$lib/components/AutocompleteInput.svelte'
 
   const GAME_ID = 'capitdle'
-  const COLOR = '#10b981'
+  const COLOR = '#285b7a'
   const MAX_GUESSES = 4
   const todayKey = getTodayKey()
   const gameNumber = getDailyNumber()
@@ -65,18 +65,18 @@
     <div class="page-header justify-between">
       <a href="/" class="back-btn">← Hub</a>
       <div class="flex items-center gap-3">
-        {#if streak.current > 0}<span class="text-xs text-emerald-400">Streak: {streak.current}</span>{/if}
+        {#if streak.current > 0}<span class="text-xs text-accent">Streak: {streak.current}</span>{/if}
         <span class="text-xs text-slate-500">Day #{gameNumber}</span>
       </div>
     </div>
 
     <div class="text-center mb-6">
       <h1 class="text-2xl font-bold text-white mb-1">Capitdle</h1>
-      <p class="text-sm text-slate-400">Name the <span class="text-emerald-400 font-semibold">capital city</span>.</p>
+      <p class="text-sm text-slate-400">Name the <span class="text-accent font-semibold">capital city</span>.</p>
     </div>
 
     <!-- Country prompt -->
-    <div class="card p-10 text-center mb-4" style="border-color:rgba(16,185,129,0.25)">
+    <div class="card p-10 text-center mb-4" style="border-color:var(--rule)">
       <p class="text-slate-400 text-xs font-semibold uppercase tracking-wider mb-2">Country</p>
       <p class="text-4xl font-bold text-white">{puzzle.country}</p>
     </div>

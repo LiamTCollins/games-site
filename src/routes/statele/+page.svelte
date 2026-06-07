@@ -16,7 +16,7 @@
   ].sort()
 
   const GAME_ID = 'statele'
-  const COLOR = '#ef4444'
+  const COLOR = '#285b7a'
   const todayKey = getTodayKey()
   const gameNumber = getDailyNumber()
   const puzzle = cities[getDailyIndex(cities.length)]
@@ -86,7 +86,7 @@
     <div class="page-header justify-between">
       <a href="/" class="back-btn">← Hub</a>
       <div class="flex items-center gap-3">
-        {#if streak.current > 0}<span class="text-xs text-red-400">Streak: {streak.current}</span>{/if}
+        {#if streak.current > 0}<span class="text-xs text-accent">Streak: {streak.current}</span>{/if}
         <span class="text-xs text-slate-500">Day #{gameNumber}</span>
       </div>
     </div>
@@ -97,7 +97,7 @@
     </div>
 
     <!-- City display -->
-    <div class="card p-8 text-center mb-6" style="border-color:rgba(239,68,68,0.2)">
+    <div class="card p-8 text-center mb-6" style="border-color:var(--rule)">
       <p class="text-slate-400 text-xs font-semibold uppercase tracking-wider mb-2">City</p>
       <p class="text-5xl font-bold text-white">{puzzle.city}</p>
     </div>
@@ -107,13 +107,13 @@
       <div class="space-y-2 mb-4">
         {#each puzzle.clues.slice(0, cluesRevealed) as clue, i}
           <div class="clue-card flex gap-3 items-start">
-            <span class="tag mt-0.5 shrink-0" style="background:#ef444422;color:#ef4444">#{i + 1}</span>
+            <span class="tag mt-0.5 shrink-0" style="background:#285b7a22;color:#285b7a">#{i + 1}</span>
             <p class="text-slate-200 text-sm leading-relaxed">{clue}</p>
           </div>
         {/each}
         {#each Array(MAX_CLUES - cluesRevealed) as _, i}
           <div class="clue-card flex gap-3 items-center opacity-30">
-            <span class="tag" style="background:#ef444411;color:#ef4444">#{cluesRevealed + i + 1}</span>
+            <span class="tag" style="background:#285b7a11;color:#285b7a">#{cluesRevealed + i + 1}</span>
             <p class="text-slate-500 text-sm">Locked</p>
           </div>
         {/each}
@@ -140,7 +140,7 @@
     {/if}
 
     {#if gameOver}
-      <ResultBar {won} answer={puzzle.state} shareText={getShareText()} color="#ef4444" onShowModal={() => showModal = true} />
+      <ResultBar {won} answer={puzzle.state} shareText={getShareText()} color="#285b7a" onShowModal={() => showModal = true} />
     {/if}
 
   </div>

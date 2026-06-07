@@ -6,7 +6,7 @@
   import ResultBar from '$lib/components/ResultBar.svelte'
 
   const GAME_ID = 'elemently'
-  const COLOR = '#14b8a6'
+  const COLOR = '#285b7a'
   const MAX_GUESSES = 5
   const todayKey = getTodayKey()
   const gameNumber = getDailyNumber()
@@ -103,18 +103,18 @@
     <div class="page-header justify-between">
       <a href="/" class="back-btn">← Hub</a>
       <div class="flex items-center gap-3">
-        {#if streak.current > 0}<span class="text-xs text-teal-400">Streak: {streak.current}</span>{/if}
+        {#if streak.current > 0}<span class="text-xs text-accent">Streak: {streak.current}</span>{/if}
         <span class="text-xs text-slate-500">Day #{gameNumber}</span>
       </div>
     </div>
 
     <div class="text-center mb-6">
       <h1 class="text-2xl font-bold text-white mb-1">Elemently</h1>
-      <p class="text-sm text-slate-400">Guess the <span class="text-teal-400 font-semibold">atomic number</span> of the element.</p>
+      <p class="text-sm text-slate-400">Guess the <span class="text-accent font-semibold">atomic number</span> of the element.</p>
     </div>
 
     <!-- Element display -->
-    <div class="card p-8 text-center mb-4" style="border-color:rgba(20,184,166,0.25)">
+    <div class="card p-8 text-center mb-4" style="border-color:var(--rule)">
       <p class="text-slate-400 text-xs font-semibold uppercase tracking-wider mb-2">Element</p>
       <p class="text-5xl font-bold text-white mb-1">{puzzle.name}</p>
       <p class="text-slate-500 text-sm font-mono">{puzzle.symbol}</p>
@@ -124,10 +124,10 @@
     {#if hint1Shown || hint2Shown || gameOver}
       <div class="flex gap-2 mb-4 flex-wrap">
         {#if hint1Shown || gameOver}
-          <span class="tag" style="background:#14b8a622;color:#14b8a6">Period {puzzle.period}</span>
+          <span class="tag" style="background:#285b7a22;color:#285b7a">Period {puzzle.period}</span>
         {/if}
         {#if hint2Shown || gameOver}
-          <span class="tag" style="background:#14b8a622;color:#14b8a6">{groupLabel}</span>
+          <span class="tag" style="background:#285b7a22;color:#285b7a">{groupLabel}</span>
         {/if}
         {#if hint1Shown && !hint2Shown && !gameOver}
           <span class="text-xs text-slate-500 self-center">One more wrong guess reveals the group</span>
@@ -161,7 +161,7 @@
           max="118"
           autofocus
         />
-        <button class="btn text-white shrink-0" style="background:#14b8a6" on:click={submitGuess} disabled={!input}>
+        <button class="btn text-white shrink-0" style="background:#285b7a" on:click={submitGuess} disabled={!input}>
           Guess
         </button>
       </div>
@@ -169,7 +169,7 @@
     {/if}
 
     {#if gameOver}
-      <ResultBar {won} answer="#{puzzle.number} — {puzzle.name}" shareText={getShareText()} color="#14b8a6" onShowModal={() => showModal = true} />
+      <ResultBar {won} answer="#{puzzle.number} — {puzzle.name}" shareText={getShareText()} color="#285b7a" onShowModal={() => showModal = true} />
     {/if}
 
   </div>

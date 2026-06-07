@@ -96,7 +96,7 @@
     </div>
 
     <!-- Timer display -->
-    <div class="card p-8 text-center mb-6" style="border-color: rgba(34,197,94,0.2)">
+    <div class="card p-8 text-center mb-6" style="border-color: var(--rule)">
       {#if phase === 'ready'}
         <div class="text-6xl font-mono font-bold text-slate-600">5.000</div>
         <p class="text-slate-500 text-sm mt-3">Press START or Space</p>
@@ -116,7 +116,7 @@
 
     <!-- Action button -->
     {#if phase === 'ready'}
-      <button class="btn w-full text-white text-lg py-4" style="background:#22c55e" on:click={startCountdown}>
+      <button class="btn w-full text-white text-lg py-4" style="background:#285b7a" on:click={startCountdown}>
         START
       </button>
     {:else if phase === 'countdown'}
@@ -131,7 +131,7 @@
     {/if}
 
     {#if phase === 'done'}
-      <ResultBar won={score < 500} answer="5.000s" shareText={getShareText()} color="#22c55e" onShowModal={() => showModal = true} />
+      <ResultBar won={score < 500} answer="5.000s" shareText={getShareText()} color="#285b7a" onShowModal={() => showModal = true} />
     {/if}
 
   </div>
@@ -142,7 +142,7 @@
     won={score < 500}
     answer="5.000s"
     shareText={getShareText()}
-    color="#22c55e"
+    color="#285b7a"
     onClose={() => showModal = false}
   />
 {/if}

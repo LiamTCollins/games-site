@@ -162,12 +162,13 @@
   }
 }
 
-/* Transitional remaps: keep dark-theme utility classes legible on the new
-   light palette until each page is hand-tuned. Higher specificity (body …)
-   overrides Tailwind's utility without !important. */
-body .text-white { color: var(--ink); }
+/* Remap dark-theme utility classes onto the editorial light palette.
+   Higher specificity (body …) overrides Tailwind without !important. */
+body .text-white { color: var(--ink); }            /* headings → ink */
+body .btn.text-white { color: var(--paper); }       /* button labels → paper on accent */
 body .text-slate-200 { color: var(--ink); }
 body .text-slate-300 { color: var(--ink-soft); }
 body .text-slate-400 { color: var(--ink-soft); }
 body .text-slate-500 { color: var(--muted); }
 body .text-slate-600 { color: var(--muted); }
+body .text-accent { color: var(--accent); }
