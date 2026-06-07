@@ -118,6 +118,7 @@
         <a href="/faq" class="hover:text-slate-400">FAQ</a>
         <a href="/privacy" class="hover:text-slate-400">Privacy</a>
       </div>
+      <p>Looking for more? Browse a big directory of daily games at <a href="https://listdle.com" target="_blank" rel="noopener" class="hover:text-slate-400 underline">Listdle</a>.</p>
       <p>Resets daily at midnight UTC · © {new Date().getFullYear()} daily-le.com</p>
     </footer>
   </div>
