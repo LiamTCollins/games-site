@@ -108,8 +108,8 @@
 </script>
 
 <svelte:head>
-  <title>Datele — daily-le.com</title>
-  <meta name="description" content="Guess the month and year of a famous historical event in this daily history game." />
+  <title>Guess the Date in History — Daily History Game | Datele</title>
+  <meta name="description" content="Datele is a free daily history game. Guess the month and year of a famous historical event, then the exact day for a bonus point." />
   <link rel="canonical" href="https://daily-le.com/datele" />
 </svelte:head>
 

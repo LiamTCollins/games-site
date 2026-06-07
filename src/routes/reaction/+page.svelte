@@ -77,8 +77,8 @@
 <svelte:window on:keydown={handleKey} />
 
 <svelte:head>
-  <title>Reactionle — daily-le.com</title>
-  <meta name="description" content="Stop the timer as close to five seconds as you can in this daily reaction-timing game." />
+  <title>Reaction Time Game — Stop the Timer at 5.000s | Reactionle</title>
+  <meta name="description" content="Reactionle is a free daily reaction time game. Stop the timer as close to five seconds as you can, with no second chances. A new challenge every day." />
   <link rel="canonical" href="https://daily-le.com/reaction" />
 </svelte:head>
 

@@ -60,8 +60,8 @@
 
 <svelte:window on:keydown={handleKey} />
 <svelte:head>
-  <title>Blindtap — daily-le.com</title>
-  <meta name="description" content="Tap after exactly five seconds with no visible timer in this daily time-perception challenge." />
+  <title>5-Second Timer Challenge, No Clock | Blindtap</title>
+  <meta name="description" content="Blindtap is a free daily time-perception game. Tap after exactly five seconds with no visible timer to guide you. A new challenge every day." />
   <link rel="canonical" href="https://daily-le.com/blindtap" />
 </svelte:head>
 

@@ -54,8 +54,8 @@
 </script>
 
 <svelte:head>
-  <title>Capitdle — daily-le.com</title>
-  <meta name="description" content="Name the capital city of a given country in this daily world-geography game." />
+  <title>Guess the Capital City — Daily Geography Game | Capitdle</title>
+  <meta name="description" content="Capitdle is a free daily geography game. Name the capital city of a country in four guesses. A new country every day." />
   <link rel="canonical" href="https://daily-le.com/capitdle" />
 </svelte:head>
 

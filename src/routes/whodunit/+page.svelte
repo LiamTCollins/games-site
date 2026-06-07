@@ -69,8 +69,8 @@
 </script>
 
 <svelte:head>
-  <title>Whodunit — daily-le.com</title>
-  <meta name="description" content="Identify a famous historical figure from progressive clues in this daily guessing game." />
+  <title>Guess the Famous Person — Daily Clue Game | Whodunit</title>
+  <meta name="description" content="Whodunit is a free daily game where you guess a famous person from clues. Identify the historical figure or celebrity in as few clues as possible." />
   <link rel="canonical" href="https://daily-le.com/whodunit" />
 </svelte:head>
 

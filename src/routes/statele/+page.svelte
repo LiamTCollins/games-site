@@ -75,8 +75,8 @@
 </script>
 
 <svelte:head>
-  <title>Statele — daily-le.com</title>
-  <meta name="description" content="Name the US state or territory a city belongs to in this daily geography game." />
+  <title>Guess the US State from a City — Daily Geography Game | Statele</title>
+  <meta name="description" content="Statele is a free daily US geography game. Name the state or territory a city belongs to. A new city every day." />
   <link rel="canonical" href="https://daily-le.com/statele" />
 </svelte:head>
 

@@ -92,8 +92,8 @@
 </script>
 
 <svelte:head>
-  <title>Elemently — daily-le.com</title>
-  <meta name="description" content="Guess a chemical element atomic number with hot and cold feedback in this daily chemistry game." />
+  <title>Guess the Element — Daily Periodic Table Game | Elemently</title>
+  <meta name="description" content="Elemently is a free daily periodic table game. Guess a chemical element's atomic number with hot and cold hints. A new element every day." />
   <link rel="canonical" href="https://daily-le.com/elemently" />
 </svelte:head>
 

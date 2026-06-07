@@ -67,8 +67,8 @@
 </script>
 
 <svelte:head>
-  <title>Physicsle — daily-le.com</title>
-  <meta name="description" content="Identify the physics phenomenon from progressive clues in this daily science game." />
+  <title>Guess the Physics Phenomenon — Daily Science Game | Physicsle</title>
+  <meta name="description" content="Physicsle is a free daily science game. Identify the physics phenomenon from progressive clues. A new concept every day." />
   <link rel="canonical" href="https://daily-le.com/physicsle" />
 </svelte:head>
 

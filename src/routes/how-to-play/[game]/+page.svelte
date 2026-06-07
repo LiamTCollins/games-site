@@ -1,10 +1,11 @@
 <script>
   export let data
   $: guide = data.guide
+  $: kw = guide.tagline.replace(/\.$/, '')
 </script>
 
 <svelte:head>
-  <title>How to Play {guide.name} — daily-le.com</title>
+  <title>How to Play {guide.name}: {kw} | daily-le.com</title>
   <meta name="description" content={guide.description} />
   <link rel="canonical" href={`https://daily-le.com/how-to-play/${data.slug}`} />
 </svelte:head>

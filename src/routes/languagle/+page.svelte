@@ -68,8 +68,8 @@
 </script>
 
 <svelte:head>
-  <title>Languagle — daily-le.com</title>
-  <meta name="description" content="Identify a world language from a short text snippet in this daily linguistics game." />
+  <title>Guess the Language — Daily Language Game | Languagle</title>
+  <meta name="description" content="Languagle is a free daily language game. Identify a world language from a short text snippet. A new language every day." />
   <link rel="canonical" href="https://daily-le.com/languagle" />
 </svelte:head>
 

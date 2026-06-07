@@ -87,8 +87,8 @@
 </script>
 
 <svelte:head>
-  <title>Distantle — daily-le.com</title>
-  <meta name="description" content="Estimate the distance in kilometres between two world cities in this daily geography game." />
+  <title>Guess the Distance Between Cities — Daily Geo Game | Distantle</title>
+  <meta name="description" content="Distantle is a free daily geography game. Estimate the distance in kilometres between two world cities. A new pair every day." />
   <link rel="canonical" href="https://daily-le.com/distantle" />
 </svelte:head>
 

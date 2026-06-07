@@ -61,8 +61,8 @@
 </script>
 
 <svelte:head>
-  <title>daily-le.com — Daily Puzzle Games</title>
-  <meta name="description" content="Eleven free daily puzzle games in one place: guess the sport, capital, language, US state, historical date, chemical element, and more. A fresh challenge every day." />
+  <title>daily-le — 11 Free Daily Puzzle Games, New Every Day</title>
+  <meta name="description" content="Play 11 free daily puzzle games in one place: guess the famous person, sport, capital city, language, US state, chemical element, and more. A new challenge every day." />
   <link rel="canonical" href="https://daily-le.com/" />
   {@html jsonLdScript}
 </svelte:head>

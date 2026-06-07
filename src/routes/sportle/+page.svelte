@@ -68,8 +68,8 @@
 </script>
 
 <svelte:head>
-  <title>Sportle — daily-le.com</title>
-  <meta name="description" content="Name the sport from its description in this daily game featuring famous and obscure sports." />
+  <title>Guess the Sport — Daily Sports Guessing Game | Sportle</title>
+  <meta name="description" content="Sportle is a free daily sports guessing game. Name the sport from its description, from soccer to kabaddi. A new sport every day." />
   <link rel="canonical" href="https://daily-le.com/sportle" />
 </svelte:head>
 
