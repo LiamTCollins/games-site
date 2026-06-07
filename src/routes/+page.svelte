@@ -67,29 +67,29 @@
   {@html jsonLdScript}
 </svelte:head>
 
-<main class="min-h-screen py-10 px-4">
+<main class="min-h-screen py-12 px-5">
   <div class="max-w-3xl mx-auto">
 
-    <!-- Header -->
-    <header class="text-center mb-10">
-      <h1 class="text-4xl font-extrabold text-white tracking-tight mb-2">
-        daily<span class="text-indigo-400">-le</span>.com
-      </h1>
-      <p class="text-slate-400 text-sm">Eleven free puzzles. New every day.</p>
-      <div class="mt-4 inline-flex items-center gap-2 px-3 py-1.5 rounded-full text-xs font-semibold bg-white/5 border border-white/10 text-slate-300">
-        Day #{dayNumber} &nbsp;·&nbsp; {playedCount}/11 played today
+    <!-- Masthead -->
+    <header class="masthead">
+      <p class="eyebrow">Daily Puzzles</p>
+      <h1 class="wordmark">daily<span class="wordmark-accent">-le</span></h1>
+      <p class="lede">Eleven free puzzles. A new one every day.</p>
+      <div class="dateline">
+        <span>Day No. {dayNumber}</span>
+        <span class="dateline-sep">·</span>
+        <span>{playedCount} of 11 played today</span>
       </div>
     </header>
 
-    <!-- Game grid -->
+    <!-- Game index -->
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
-      {#each games as game}
+      {#each games as game, i}
         <GameCard
           name={game.name}
           description={game.description}
-          emoji={game.emoji}
-          color={game.color}
           route={game.route}
+          index={i}
           played={gameStatuses[game.id] ?? false}
           streak={gameStreaks[game.id] ?? 0}
         />
@@ -97,29 +97,122 @@
     </div>
 
     <!-- Sister sites -->
-    <div class="mt-12 pt-8 border-t border-white/5">
-      <p class="text-center text-xs font-semibold uppercase tracking-wider text-slate-500 mb-4">More daily games</p>
-      <div class="flex flex-wrap justify-center gap-3">
-        <a href="https://popdle.com" target="_blank" rel="noopener"
-          class="card card-hover px-5 py-3 text-sm font-semibold text-slate-200 flex items-center gap-2">
-          Popdle <span class="text-slate-500">↗</span>
+    <section class="sisters">
+      <p class="section-label">More daily games</p>
+      <div class="sister-links">
+        <a href="https://popdle.com" target="_blank" rel="noopener" class="card card-hover sister-link">
+          Popdle <span class="sister-arrow">↗</span>
         </a>
-        <a href="https://playquotedle.com" target="_blank" rel="noopener"
-          class="card card-hover px-5 py-3 text-sm font-semibold text-slate-200 flex items-center gap-2">
-          Quotedle <span class="text-slate-500">↗</span>
+        <a href="https://playquotedle.com" target="_blank" rel="noopener" class="card card-hover sister-link">
+          Quotedle <span class="sister-arrow">↗</span>
         </a>
       </div>
-    </div>
+    </section>
 
-    <footer class="mt-10 text-center text-xs text-slate-600 space-y-2">
-      <div class="flex flex-wrap justify-center gap-4">
-        <a href="/about" class="hover:text-slate-400">About</a>
-        <a href="/how-to-play" class="hover:text-slate-400">Guides</a>
-        <a href="/faq" class="hover:text-slate-400">FAQ</a>
-        <a href="/privacy" class="hover:text-slate-400">Privacy</a>
+    <footer class="site-foot">
+      <div class="foot-links">
+        <a href="/about">About</a>
+        <a href="/how-to-play">Guides</a>
+        <a href="/faq">FAQ</a>
+        <a href="/privacy">Privacy</a>
       </div>
-      <p>Looking for more? Browse a big directory of daily games at <a href="https://listdle.com" target="_blank" rel="noopener" class="hover:text-slate-400 underline">Listdle</a>.</p>
-      <p>Resets daily at midnight UTC · © {new Date().getFullYear()} daily-le.com</p>
+      <p>Looking for more? Browse a directory of daily games at <a href="https://listdle.com" target="_blank" rel="noopener" class="foot-inline">Listdle</a>.</p>
+      <p>Resets daily at midnight UTC · © {new Date().getFullYear()} daily-le</p>
     </footer>
   </div>
 </main>
+
+<style>
+  .masthead {
+    text-align: center;
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid var(--rule);
+  }
+  .eyebrow {
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 0.6rem;
+  }
+  .wordmark {
+    font-family: 'Fraunces', Georgia, serif;
+    font-size: clamp(2.8rem, 9vw, 4.2rem);
+    font-weight: 600;
+    line-height: 1;
+    color: var(--ink);
+    margin: 0;
+  }
+  .wordmark-accent { color: var(--accent); }
+  .lede {
+    font-size: 1rem;
+    color: var(--ink-soft);
+    margin-top: 0.7rem;
+  }
+  .dateline {
+    margin-top: 1rem;
+    font-size: 0.78rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--muted);
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+  }
+  .dateline-sep { opacity: 0.6; }
+
+  .sisters {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--rule);
+    text-align: center;
+  }
+  .section-label {
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 1rem;
+  }
+  .sister-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.75rem;
+  }
+  .sister-link {
+    padding: 0.7rem 1.3rem;
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: var(--ink);
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+  }
+  .sister-arrow { color: var(--muted); }
+
+  .site-foot {
+    margin-top: 2.5rem;
+    text-align: center;
+    font-size: 0.78rem;
+    color: var(--muted);
+  }
+  .foot-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.1rem;
+    margin-bottom: 0.7rem;
+  }
+  .foot-links a, .foot-inline {
+    color: var(--ink-soft);
+    text-decoration: none;
+  }
+  .foot-links a:hover, .foot-inline:hover { color: var(--accent); }
+  .foot-inline { text-decoration: underline; }
+  .site-foot p { margin: 0.3rem 0; }
+</style>
