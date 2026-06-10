@@ -1,0 +1,6 @@
+# Applied by Cloudflare to static assets (SSR responses get headers from src/hooks.server.js)
+/*
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: DENY
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=()

@@ -1,0 +1,17 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "preview",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run", "preview", "--", "--port", "4174"],
+      "port": 4174
+    },
+    {
+      "name": "legacy-static",
+      "runtimeExecutable": "python",
+      "runtimeArgs": ["-m", "http.server", "4175"],
+      "port": 4175
+    }
+  ]
+}

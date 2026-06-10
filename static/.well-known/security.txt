@@ -1,0 +1,4 @@
+Contact: mailto:collins.liam72@gmail.com
+Expires: 2027-06-09T00:00:00.000Z
+Preferred-Languages: en
+Canonical: https://daily-le.com/.well-known/security.txt
